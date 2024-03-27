@@ -1,7 +1,23 @@
-import { Inter } from "next/font/google";
+import { Poppins, Noto_Sans_JP, Crimson_Text} from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ 
+  subsets: ["latin"], 
+  weight: ["100", "200","300","400","500","600","700","800","900"], 
+  variable:' --font-Poppins',
+});
+
+const noto = Noto_Sans_JP({ 
+  subsets: ["latin"], 
+  weight: ["100", "200","300","400","500","600","700","800","900"],
+  variable:'--font-Noto_Sans_JP',
+});
+
+const crimson = Crimson_Text({ 
+  subsets: ["latin"], 
+  weight: ["400","600","700"],
+  variable:'--font-Crimson_Text', 
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${poppins.variable} ${noto.variable} ${crimson.variable}`}>{children}</body>
     </html>
   );
 }
