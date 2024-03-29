@@ -1,10 +1,9 @@
-import Image from "next/image";
-
+import Image from 'next/image';
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 font-poppins">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+    return (
+        <main className='flex min-h-screen flex-col items-center justify-between font-poppins bg-lk-grey'>
+            {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex bg-green-300">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.js</code>
@@ -125,7 +124,50 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-    </main>
-  );
+      </div> */}
+
+        {/* INTRODUCTION */}
+            <div className=' text-center h-[30rem] w-full h overflow-x-hidden '>
+              <div className='flex flex-col relative justify-center items-center bg-blue-200'>
+
+                <div className='font-noto font-black text-lk-red-600 text-nowrap	flex flex-col items-center tracking-[-0.02em] '>
+                    <div className='text-[7.7rem] leading-tight'>
+                      ルウク
+                      </div>
+                    <div className='text-[7.5rem] leading-[1.3] pb-2'>
+                      コルマン
+                    </div>
+                </div>
+
+                <div className='absolute '>
+                  <div className='font-crimson font-semibold  text-4xl '>
+                  <span>
+                  Hi_I’m
+                    </span> 
+                  </div>
+                  <div className='font-haetten text-[10.6rem] leading-none -mt-8 	'>
+                  LUKE 
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          <div className='bg-lk-white w-full text-lk-red-600 rounded-t-full pt-24'>
+        {/* HERO */}
+        <div className='text-center'>
+          <div className='text-4xl tracking-[-0.04em]'>your <span>__</span> friendly</div>
+          <div className='text-[42px] tracking-[-0.04em] leading-none font-semibold'>NEIGHBOURHOOD</div>
+          <div className='text-[42px] tracking-[-0.04em] leading-none  font-semibold'>FRONTEND</div>
+          <div className='text-[42px] tracking-[-0.04em] leading-none  font-semibold'>DEVELOPER</div>
+          <div className='text-base tracking-[-0.04em] font-semibold'>AND PART-TIME SUPERHERO</div>
+
+
+
+        </div>
+          <div className='h-96'>
+          </div>
+          </div>
+        </main>
+    );
 }

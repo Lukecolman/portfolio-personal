@@ -21,6 +21,7 @@ const noto = Noto_Sans_JP({
 });
 
 const crimson = Crimson_Text({ 
+  style: ["italic"],
   subsets: ["latin"], 
   weight: ["400","600","700"],
   variable:'--font-Crimson_Text', 

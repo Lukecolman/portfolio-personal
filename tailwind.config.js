@@ -35,6 +35,7 @@ module.exports = {
             '950': '#4d0202',
         },
           grey: '#222222',
+          white: '#F9F9F9',
         },
       }
     },
