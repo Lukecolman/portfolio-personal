@@ -15,7 +15,27 @@ module.exports = {
       fontFamily: {
         noto: ["var(--font-Noto_Sans_JP)"],
         crimson: ["var(--font-Crimson_Text)"],
-        poppins: ["var(--font-Poppins)"]
+        poppins: ["var(--font-Poppins)"],
+        haetten: ["var(--font-Haettenschweiler)"]
+
+      },
+      colors: {
+        'lk': {
+          'red': {
+            '50': '#fff0f0',
+            '100': '#ffdede',
+            '200': '#ffc3c3',
+            '300': '#ff9999',
+            '400': '#ff605f',
+            '500': '#ff2e2d',
+            '600': '#f51918',
+            '700': '#ce0807',
+            '800': '#aa0b0a',
+            '900': '#8c1110',
+            '950': '#4d0202',
+        },
+          grey: '#222222',
+        },
       }
     },
   },

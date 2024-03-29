@@ -1,5 +1,12 @@
 import { Poppins, Noto_Sans_JP, Crimson_Text} from "next/font/google";
 import "./globals.css";
+import Haettenschweiler from "next/font/local";
+
+const haetten = Haettenschweiler({
+  src: "/font/Haettenschweiler-Regular.ttf",
+  display: "swap",
+  variable:' --font-Haettenschweiler',
+})
 
 const poppins = Poppins({ 
   subsets: ["latin"], 
@@ -27,7 +34,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${noto.variable} ${crimson.variable}`}>{children}</body>
+      <body className={`${poppins.variable} ${noto.variable} ${crimson.variable} ${haetten.variable}`}>{children}</body>
     </html>
   );
 }
