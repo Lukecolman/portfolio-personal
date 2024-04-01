@@ -22,7 +22,7 @@ module.exports = {
       colors: {
         'lk': {
           'red': {
-            '50': '#fff0f0',
+            '50': '#FEE1E1',
             '100': '#ffdede',
             '200': '#ffc3c3',
             '300': '#ff9999',
@@ -37,7 +37,10 @@ module.exports = {
           grey: '#222222',
           white: '#F9F9F9',
         },
-      }
+      },
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
+      },
     },
   },
   plugins: [],

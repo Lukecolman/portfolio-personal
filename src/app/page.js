@@ -127,7 +127,7 @@ export default function Home() {
       </div> */}
 
         {/* INTRODUCTION */}
-            <div className=' text-center h-[30rem] w-full h overflow-x-hidden '>
+            <div className=' text-center h-[30rem] w-full overflow-x-hidden '>
               <div className='flex flex-col relative justify-center items-center bg-blue-200'>
 
                 <div className='font-noto font-black text-lk-red-600 text-nowrap	flex flex-col items-center tracking-[-0.02em] '>
@@ -142,7 +142,7 @@ export default function Home() {
                 <div className='absolute '>
                   <div className='font-crimson font-semibold  text-4xl '>
                   <span>
-                  Hi_I’m
+                  Hi &nbsp; I’m
                     </span> 
                   </div>
                   <div className='font-haetten text-[10.6rem] leading-none -mt-8 	'>
@@ -156,15 +156,54 @@ export default function Home() {
           <div className='bg-lk-white w-full text-lk-red-600 rounded-t-full pt-24'>
         {/* HERO */}
         <div className='text-center'>
-          <div className='text-4xl tracking-[-0.04em]'>your <span>__</span> friendly</div>
+          <div className='text-4xl tracking-[-0.04em] -mb-1'>your&nbsp;<span className=' -tracking-[0.6rem] font-normal align-text-bottom'>----</span>&nbsp; friendly</div>
           <div className='text-[42px] tracking-[-0.04em] leading-none font-semibold'>NEIGHBOURHOOD</div>
           <div className='text-[42px] tracking-[-0.04em] leading-none  font-semibold'>FRONTEND</div>
           <div className='text-[42px] tracking-[-0.04em] leading-none  font-semibold'>DEVELOPER</div>
           <div className='text-base tracking-[-0.04em] font-semibold'>AND PART-TIME SUPERHERO</div>
-
-
+        </div>
+        
+        {/* circle */}
+        <div className='w-full flex justify-center items-center tracking-[0.11em] font-semibold mt-20 relative '>
+           <svg viewBox="0 0 100 100" width="100" height="100" className='fill-lk-red-600 h-auto max-w-[66vmin] origin-center w-[28%] animate-spin-slow	'>
+            <defs>
+              <path id="circle"
+                d="
+                  M 50, 50
+                  m -37, 0
+                  a 37,37 0 1,1 74,0
+                  a 37,37 0 1,1 -74,0"/>
+            </defs>
+            <text font-size="14.7" >
+              <textPath href="#circle">
+               MADAFAKA IM LUKE HELLO
+              </textPath>
+            </text>
+          </svg>
+          <Image
+              src="/arrow.svg"
+              alt="arrow"
+              className="absolute"
+              width={25}
+              height={2}
+              priority
+            />
+          </div>
+        
+        {/* work title */}
+        <div className='w-full  text-center mt-20 flex flex-col relative justify-center items-center overflow-x-hidden'>
+          <span className='text-[7.7rem] leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em]  pb-3'>
+          入選作品
+          </span>
+          <h2 className='font-haetten flex flex-col text-8xl absolute '>
+            <span className='font-crimson text-[1.7rem]  -mb-5'>
+              selected
+              </span>
+            WORKS
+          </h2>
 
         </div>
+
           <div className='h-96'>
           </div>
           </div>
