@@ -35,7 +35,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${noto.variable} ${crimson.variable} ${haetten.variable}`}>{children}</body>
+      <body className={`${poppins.variable} ${noto.variable} ${crimson.variable} ${haetten.variable} bg-lk-grey`}>{children}</body>
     </html>
   );
 }

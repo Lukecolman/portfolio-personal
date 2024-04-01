@@ -22,7 +22,7 @@ export default function Home() {
     ];
 
     return (
-        <main className='flex min-h-screen flex-col items-center justify-between font-poppins bg-lk-grey'>
+        <main className='flex min-h-screen flex-col items-center justify-between font-poppins '>
             {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex bg-green-300">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
@@ -173,7 +173,7 @@ export default function Home() {
 
             </div>
 
-          <div className='bg-lk-white w-full text-lk-red-600 rounded-t-full pt-24'>
+          <div className='bg-lk-white w-full text-lk-red-600 rounded-t-full pt-24 -z-30 overflow-x-hidden'>
         {/* HERO */}
         <div className='text-center'>
           <div className='text-4xl tracking-[-0.04em] -mb-1'>your&nbsp;<span className=' -tracking-[0.6rem] font-normal align-text-bottom'>----</span>&nbsp; friendly</div>
@@ -237,11 +237,11 @@ export default function Home() {
 
         {/* TECHSTACK */}
         <div className=' w-full'>
-        <div className='w-full  text-center mt-20 mb-5 flex flex-col relative justify-center items-center overflow-x-hidden'>
-          <span className='pl-4 text-6xl  leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em]'>
+        <div className='w-full  text-center mt-40 mb-5 flex flex-col relative justify-center items-center '>
+          <span className='pl-4 text-6xl  leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em] absolute -top-8 -z-10'>
           技術スタック
           </span>
-          <h2 className='italic font-extrabold flex flex-col text-5xl absolute top-4'>
+          <h2 className='italic font-extrabold flex flex-col text-5xl  '>
             TECH-STACK
           </h2>
 
@@ -251,6 +251,23 @@ export default function Home() {
           <TechStack className='mt-4'/>
 
         </div>
+
+        {/* EXPERIENCE HISTORY TITLE*/}
+        <div className='w-full  text-left mt-40 flex flex-col relative justify-left items-left  overflow-visible px-4'>
+          <span className='text-7xl  font-noto font-black text-lk-red-50 overflow-visible text-nowrap absolute -top-4 pb-3 -z-10'>
+          経験履歴
+          </span>
+          <h2 className='font-poppins font-extrabold italic flex flex-col text-6xl  '>
+            <span className='font-crimson not-italic font-semibold text-4xl pl-1'>
+              EXPERIENCE
+              </span>
+            HISTORY
+          </h2>
+
+          <img src='/ico.svg' className='h-6 text-right flex ml-auto -mt-8'></img>
+        </div>
+
+
           <div className='h-96'>
           </div>
           </div>
