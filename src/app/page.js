@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import WorkCards from '@/components/work-card';
+import TechStack from '@/components/tech-stack';
+
 
 export default function Home() {
 
@@ -15,7 +17,7 @@ export default function Home() {
         tag: ['Tag1', 'Tag2', 'Tag3'],
         title: 'Descripción del Proyecto 2',
         img: '/projects/image-294.jpg',
-        techIcons: ['/tech-icons/react.svg', '/tech-icons/nextjs.svg', '/tech-icons/graphql.svg'],
+        techIcons: ['/tech-icons/react.svg', '/tech-icons/nextjs.svg', '/tech-icons/tailwind.svg'],
       },
     ];
 
@@ -227,8 +229,28 @@ export default function Home() {
         {projectInfo.map((project, index) => (
           <WorkCards key={index} projectInfo={project} />
         ))}
+
+        <a url="www.google.com" className='font-extrabold text-2xl hover:cursor-pointer'>
+          MORE PROJECTS
+        </a>
       </div>
 
+        {/* TECHSTACK */}
+        <div className=' w-full'>
+        <div className='w-full  text-center mt-20 mb-5 flex flex-col relative justify-center items-center overflow-x-hidden'>
+          <span className='pl-4 text-6xl  leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em]'>
+          技術スタック
+          </span>
+          <h2 className='italic font-extrabold flex flex-col text-5xl absolute top-4'>
+            TECH-STACK
+          </h2>
+
+
+        </div>
+          {/* ACA VA EL MARQUEE */}
+          <TechStack className='mt-4'/>
+
+        </div>
           <div className='h-96'>
           </div>
           </div>
