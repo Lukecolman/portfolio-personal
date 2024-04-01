@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import WorkCards from '@/components/work-card';
 
 export default function Home() {
     return (
@@ -201,6 +202,12 @@ export default function Home() {
               </span>
             WORKS
           </h2>
+
+        </div>
+
+        {/* WORK */}
+        <div className='flex flex-col justify-center items-center gap-8'>
+          <WorkCards/>
 
         </div>
 
