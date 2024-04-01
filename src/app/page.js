@@ -2,6 +2,23 @@ import Image from 'next/image';
 import WorkCards from '@/components/work-card';
 
 export default function Home() {
+
+    // Información de los proyectos
+    const projectInfo = [
+      {
+        tag: ['DESARROLLO WEB', 'COSO DIGITAL'],
+        title: 'Descripción del Proyecto 1',
+        img: '/projects/image-294.jpg',
+        techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
+      },
+      {
+        tag: ['Tag1', 'Tag2', 'Tag3'],
+        title: 'Descripción del Proyecto 2',
+        img: '/projects/image-294.jpg',
+        techIcons: ['/tech-icons/react.svg', '/tech-icons/nextjs.svg', '/tech-icons/graphql.svg'],
+      },
+    ];
+
     return (
         <main className='flex min-h-screen flex-col items-center justify-between font-poppins bg-lk-grey'>
             {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex bg-green-300">
@@ -207,9 +224,10 @@ export default function Home() {
 
         {/* WORK */}
         <div className='flex flex-col justify-center items-center gap-8'>
-          <WorkCards/>
-
-        </div>
+        {projectInfo.map((project, index) => (
+          <WorkCards key={index} projectInfo={project} />
+        ))}
+      </div>
 
           <div className='h-96'>
           </div>
