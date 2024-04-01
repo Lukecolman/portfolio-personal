@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function WorkCards({ projectInfo }) {
     return (
-        <div className='min-h-[636px] w-[325px] rounded-2xl overflow-hidden bg-lk-grey text-white text-center'>
+        <div className='min-h-[636px] w-full rounded-2xl overflow-hidden bg-lk-grey text-white text-center'>
             <img className='h-[439px] w-full object-cover' src={projectInfo.img} />
             <div className='py-7 px-5 flex flex-col gap-4 text-wrap'>
                 <div className='flex flex-col'>

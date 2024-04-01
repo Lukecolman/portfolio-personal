@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import WorkCards from '@/components/work-card';
 import TechStack from '@/components/tech-stack';
+import Jobs from '@/components/jobs';
 
 
 export default function Home() {
@@ -224,8 +225,8 @@ export default function Home() {
 
         </div>
 
-        {/* WORK */}
-        <div className='flex flex-col justify-center items-center gap-8'>
+        {/* WORKS */}
+        <div className='flex flex-col justify-center items-center gap-8 px-sm'>
         {projectInfo.map((project, index) => (
           <WorkCards key={index} projectInfo={project} />
         ))}
@@ -253,7 +254,7 @@ export default function Home() {
         </div>
 
         {/* EXPERIENCE HISTORY TITLE*/}
-        <div className='w-full  text-left mt-40 flex flex-col relative justify-left items-left  overflow-visible px-4'>
+        <div className='w-full  text-left mt-40 flex flex-col relative justify-left items-left  overflow-visible px-sm'>
           <span className='text-7xl  font-noto font-black text-lk-red-50 overflow-visible text-nowrap absolute -top-4 pb-3 -z-10'>
           経験履歴
           </span>
@@ -265,6 +266,15 @@ export default function Home() {
           </h2>
 
           <img src='/ico.svg' className='h-6 text-right flex ml-auto -mt-8'></img>
+        </div>
+
+        {/* JOBS */}
+        <div className='px-sm mt-14 w-full text-center flex flex-col gap-7'>
+          <Jobs/>
+
+          <a url="www.google.com" className='text-center font-extrabold text-2xl hover:cursor-pointer'>
+          DOWNLOAD CV
+        </a>
         </div>
 
 

@@ -41,6 +41,9 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 8s linear infinite',
       },
+      spacing: {
+        sm: '1.18rem',
+       },
     },
   },
   plugins: [],
