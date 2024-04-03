@@ -16,11 +16,16 @@ export default function Jobs ({}) {
     return (
         <div>
         {JobItem.map((job, index) => (
-            <div key={index} className="font-medium my-4 py-6 text-lk-red-400 border-b-2 border-lk-red-400 flex flex-col gap-1 text-left">
+            <div key={index} className="font-medium my-4 py-6 text-lk-red-400 border-b-2 border-lk-red-400 flex flex-col gap-1 text-left 
+            md:flex-row md:justify-between md:font-semibold">
+                <div>
                 <h1 className=" text-4xl text-lk-red-600">{job.role}</h1>
                 <p className="">{job.company}</p>
+                </div>
+                <div className="md:self-end md:text-right"> 
                 <p>{job.period}</p>
                 <p>{job.type}</p>
+                </div>
             </div>
         ))}
     </div>
