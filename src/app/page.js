@@ -45,7 +45,7 @@ export default function Home() {
         </nav>
             <div className=' text-center h-[30rem] w-full overflow-x-hidden md:overflow-x-visible lg:h-[620px]'>
 
-              <div className='flex flex-col relative justify-center items-center lg:-top-14'>
+              <div className='select-none flex flex-col relative justify-center items-center lg:-top-14'>
 
                 <div className='font-noto font-black text-lk-red-600 text-nowrap	flex flex-col items-center tracking-[-0.02em] 
                 lg:tracking-[-0.8rem]
@@ -85,12 +85,12 @@ export default function Home() {
         <div className='text-center mt-[70px] md:mt-[200px] lg:mt-[400px] '>
           <div className='text-4xl tracking-[-0.04em] -mb-1 md:text-[72px] 
           md:leading-[5.5rem] 
-          lg:text-[106px] lg:leading-tight'>
+          lg:text-[106px] lg:leading-tight lg:mb-0'>
             your&nbsp;
             <span className=' -tracking-[0.6rem] font-normal align-text-bottom md:align-middle md:-tracking-[1.1rem] lg:-tracking-[1.6rem]'>----</span>
             &nbsp; friendly
           </div>
-          <div className='text-[42px] tracking-[-0.04em] leading-none font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[4.3rem]'>NEIGHBOURHOOD</div>
+          <div className='text-[42px] tracking-[-0.04em] leading-none font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[6.3rem]'>NEIGHBOURHOOD</div>
           <div className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] lg:text-[114px] lg:flex lg:justify-center lg:leading-tight '>FRONTEND
             <div className='hidden max-w-[850px] font-normal text-8xl lg:flex ml-8 items-center pt-1'>
               (
@@ -100,13 +100,13 @@ export default function Home() {
               )
             </div>
           </div>
-          <div className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[4.3rem]'>DEVELOPER</div>
-          <div className='text-base tracking-[-0.04em] font-semibold md:text-[24px] md:leading-[2rem] lg:text-[35px] lg:leading-[2.7rem]'>AND PART-TIME SUPERHERO</div>
+          <div className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[6.3rem]'>DEVELOPER</div>
+          <div className='text-base tracking-[-0.04em] font-semibold md:text-[24px] md:leading-[2rem] lg:text-[35px] lg:leading-[3.7rem]'>AND PART-TIME SUPERHERO</div>
         </div>
 
         
         {/* circle */}
-        <div className='w-full flex justify-center items-center tracking-[0.11em] font-semibold mt-20 relative md:mt-40'>
+        <div className='select-none w-full flex justify-center items-center tracking-[0.11em] font-semibold mt-20 relative md:mt-40'>
            <svg viewBox="0 0 100 100" width="100" height="100" className='fill-lk-red-600 h-auto max-w-[200px] origin-center w-[16%] md:w-[20%] lg:w-[28%] animate-spin-slow	'>
             <defs>
               <path id="circle"
@@ -133,7 +133,7 @@ export default function Home() {
           </div>
         
         {/* work title */}
-        <div className='w-full  text-center mt-20 flex flex-col relative justify-center items-center overflow-x-hidden overflow-y-hidden'>
+        <div className='select-none w-full  text-center mt-20 flex flex-col relative justify-center items-center overflow-x-hidden overflow-y-hidden'>
           <span className='text-[7.7rem] leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em]  pb-3 
           md:text-[447.22px]'>
           入選作品
@@ -162,7 +162,7 @@ export default function Home() {
       </div>
 
         {/* TECHSTACK */}
-        <div className=' w-full 
+        <div className='select-none w-full 
         md:mt-64'>
         <div className='w-full  text-center mt-40 mb-5 flex flex-col relative justify-center items-center '>
           <span className='pl-4 text-6xl  leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em] absolute -top-8 -z-10 
@@ -182,7 +182,7 @@ export default function Home() {
         </div>
 
         {/* EXPERIENCE HISTORY TITLE*/}
-        <div className='w-full  text-left mt-40 flex  relative justify-left items-left  overflow-visible px-sm 
+        <div className='select-none w-full  text-left mt-40 flex  relative justify-left items-left  overflow-visible px-sm 
         md:mt-64 
         lg:px-md lg:max-w-[2244px]'>
           <span className='text-7xl  font-noto font-black text-lk-red-50 overflow-visible text-nowrap absolute -top-4 pb-3 -z-10 
