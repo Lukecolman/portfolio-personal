@@ -1,5 +1,15 @@
+'use client';
+import { useEffect } from 'react';
+
+// TEST
+import { useRef } from 'react';
+
+
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useScroll, useTransform, motion } from 'framer-motion';
+
 
 import WorkCards from '@/components/work-card';
 import TechStack from '@/components/tech-stack';
@@ -8,6 +18,38 @@ import Footer from '@/components/footer';
 
 
 export default function Home() {
+
+  useEffect( () => {
+
+    (
+
+      async () => {
+
+          const LocomotiveScroll = (await import('locomotive-scroll')).default
+
+          const locomotiveScroll = new LocomotiveScroll();
+
+      }
+
+    )()
+
+  }, [])
+
+  const container = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+
+      target: container,
+
+      offset: ["start end", "end start"]
+
+  })
+
+
+
+  const height = useTransform(scrollYProgress, [0, 0.88], ['1800px', '0px']); // Define el rango de altura
+
+
 
     // Información de los proyectos
     const projectInfo = [
@@ -204,7 +246,8 @@ export default function Home() {
 
 
         {/* JOBS */}
-        <div className='px-sm mt-14 w-full text-center flex flex-col gap-7 
+        <div className='px-sm mt-14 mb-28 w-full text-center flex flex-col gap-7 
+         md:mb-44 
         lg:px-md lg:max-w-[2244px]'>
           <Jobs/>
 
@@ -214,8 +257,17 @@ export default function Home() {
         </a>
         </div>
 
-          <Footer/>
+
+
           </div>
+
+          <motion.div style={{height}} className="circleContainer">
+
+<div className="circle"></div>
+
+</motion.div>
+
+          <Footer/>
         </main>
     );
 }

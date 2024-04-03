@@ -35,3 +35,24 @@ body {
 .jp-vertical {
   writing-mode: vertical-rl;
 }
+
+
+
+.circleContainer{
+  position: relative;
+  /* margin-top: 100px; */
+  /* height: 800px; */
+  width: 100%;
+  overflow-y: visible;
+  background-color: red;
+}
+.circle{
+  box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.148);
+  position: absolute;
+  height: 100%;
+  width: 120%;
+  left: -10%;
+  background-color: #F9F9F9;
+  border-radius: 0% 0% 50% 50%;
+  z-index: 100;
+}

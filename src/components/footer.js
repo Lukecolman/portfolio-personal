@@ -3,12 +3,12 @@ import Link from 'next/link';
 
 export default function Footer({}) {
     return (
-        <footer className='bg-lk-red-600 text-white relative px-sm pt-md pb-sm mt-28 -z-20 w-full overflow-hidden
-        md:mt-44 
-        lg:p-md lg:pb-[2.5rem] lg:items-center'>
-            <div className='lg:max-w-[2244px] lg:mx-auto'>
+        <footer className='bg-lk-red-600 text-white relative px-sm pt-md pb-sm -z-20 w-full overflow-hidden
+       
+        lg:p-md lg:pb-[2.5rem] lg:items-center '>
+            <div className='mt-md lg:max-w-[2244px] lg:mx-auto'>
                 <span className="font-noto text-[#F74746] font-black text-[190px] absolute h-full -top-2 left-1/2 transform -translate-x-1/2 -z-10 select-none [writing-mode:vertical-lr] 
-                md:[writing-mode:horizontal-tb] md:text-[500px] md:text-center md:overflow-visible md:text-nowrap  md:-top-32">
+                md:[writing-mode:horizontal-tb] md:text-[500px] md:text-center md:overflow-visible md:text-nowrap  md:-top-16 lg:-top-10">
                 コルマン
                 </span>
                 <div className='max-w-64'>
@@ -16,7 +16,7 @@ export default function Footer({}) {
                 </div>
 
                 <div className='flex flex-col w-full font-haetten text-[15rem] leading-none text-center select-none
-                md:flex-row md:justify-center md
+                md:flex-row md:justify-center lg:text-[18rem] md:py-10 
                 '>
                     <span className='leading-none -mb-10
                     md:pr-6
