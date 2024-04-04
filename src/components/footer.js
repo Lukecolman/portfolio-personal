@@ -6,8 +6,10 @@ export default function Footer({}) {
         <footer className='bg-lk-red-600 text-white relative px-sm pt-md pb-sm -z-20 w-full overflow-hidden
        
         lg:p-md lg:pb-[2.5rem] lg:items-center '>
-            <div className='mt-md lg:max-w-[2244px] lg:mx-auto'>
-                <span className="font-noto text-[#F74746] font-black text-[190px] absolute h-full -top-2 left-1/2 transform -translate-x-1/2 -z-10 select-none [writing-mode:vertical-lr] 
+            <div className='mt-md lg:max-w-[2244px] lg:mx-auto md:h-[88vh]'>
+      
+      {/* BG TEXT */}
+                <span className="font-noto text-[#F74746] font-black text-[190px] absolute h-full top-24 left-1/2 transform -translate-x-1/2 -z-10 select-none [writing-mode:vertical-lr] 
                 md:[writing-mode:horizontal-tb] md:text-[500px] md:text-center md:overflow-visible md:text-nowrap  md:-top-16 lg:-top-10">
                 コルマン
                 </span>
@@ -16,7 +18,7 @@ export default function Footer({}) {
                 </div>
 
                 <div className='flex flex-col w-full font-haetten text-[15rem] leading-none text-center select-none
-                md:flex-row md:justify-center lg:text-[18rem] md:py-10 
+                md:flex-row md:justify-center lg:text-[18rem] 
                 '>
                     <span className='leading-none -mb-10
                     md:pr-6
@@ -30,12 +32,12 @@ export default function Footer({}) {
                     </div>
                 </div>
                 
-                <div className='text-center flex flex-col gap-7 mt-12 md:mt-2'>
+                <div className='text-center flex flex-col gap-7 mt-12 md:mt-2 '>
                     {/* MAIL */}
-                    <a className='text-center font-extrabold text-2xl self-center w-full justify-center' href="mailto:lucas.a.colman@gmail.com">lucas.a.colman@gmail.com</a>
+                    <a className='text-center font-extrabold text-2xl self-center w-full justify-center md:mb-40' href="mailto:lucas.a.colman@gmail.com">lucas.a.colman@gmail.com</a>
 
                     {/* SOCIAL MEDIA Y COPYRIGHT */}
-                    <div className="flex flex-col gap-7 md:mt-12 md:flex-row md:items-center md:justify-between ">
+                    <div className="flex flex-col gap-7 md:mt-10 md:flex-row  md:justify-between ">
                         {/* SOCIAL MEDIA */}
                         <ul className='flex justify-between px-sm font-bold gap-8'>
                         <li>
@@ -50,7 +52,7 @@ export default function Footer({}) {
                         </ul>
                     
                         {/* COPYRIGHT */}
-                        <span className='font-bold md:ml-auto md:font-medium md:text-sm'>© COPYRIGHT 2024 LUKE COLMAN</span>
+                        <span className='font-medium md:ml-auto md:text-sm'>© COPYRIGHT 2024 LUKE COLMAN</span>
                     </div>
                 </div>
             </div>
