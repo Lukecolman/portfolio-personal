@@ -104,7 +104,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className='absolute lg:pt-6'>
+                <div data-scroll data-scroll-speed={-0.2} className='text-lk-white z-50 absolute lg:pt-6'>
                   <div className='font-crimson font-semibold  text-4xl 
                   lg:text-[4.8rem] 
                   '>
@@ -117,7 +117,12 @@ export default function Home() {
                   '>
                   LUKE 
                   </div>
+
+                  
+                  
                 </div>
+
+
               </div>
 
             </div>
