@@ -270,7 +270,7 @@ export default function Home() {
 
 <div className="circle"></div>
 
-</motion.div>
+</motion.div> 
 
           <Footer/>
         </main>

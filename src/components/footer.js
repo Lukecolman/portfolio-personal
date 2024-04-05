@@ -3,25 +3,30 @@ import Link from 'next/link';
 
 export default function Footer({}) {
     return (
-        <footer className='bg-lk-red-600 text-white relative px-sm pt-md pb-sm -z-20 w-full overflow-hidden
-       
-        lg:p-md lg:pb-[2.5rem] lg:items-center '>
-            <div className='mt-md lg:max-w-[2244px] lg:mx-auto md:h-[88vh]'>
+        <footer className='bg-lk-red-600 text-white relative px-sm pt-md pb-sm -z-20 w-full overflow-hidden 
+        lg:p-md lg:pb-[2.5rem] lg:items-center
+         '>
+            <div className='mt-md lg:max-w-[2244px] lg:mx-auto md:h-[88vh] 
+            md:flex md:flex-col md:content-between
+            '>
       
       {/* BG TEXT */}
-                <span className="font-noto text-[#F74746] font-black text-[190px] absolute h-full top-24 left-1/2 transform -translate-x-1/2 -z-10 select-none [writing-mode:vertical-lr] 
-                md:[writing-mode:horizontal-tb] md:text-[500px] md:text-center md:overflow-visible md:text-nowrap  md:-top-16 lg:-top-10">
+                <span className="font-noto text-[#F74746] font-black text-[190px] absolute h-full top-10 left-1/2 transform -translate-x-1/2 -z-10 select-none [writing-mode:vertical-lr] 
+                md:[writing-mode:horizontal-tb] md:text-[500px] md:text-center md:overflow-visible md:text-nowrap  md:top-8 ">
                 コルマン
                 </span>
+
                 <div className='max-w-64'>
                     <span className='text-5xl text-left font-medium select-none'>Let's work together</span>
                 </div>
 
                 <div className='flex flex-col w-full font-haetten text-[15rem] leading-none text-center select-none
-                md:flex-row md:justify-center lg:text-[18rem] 
+                md:flex-row md:justify-center 
+                lg:text-[18rem] 
+                 md:-mb-20 
                 '>
                     <span className='leading-none -mb-10
-                    md:pr-6
+                    md:pr-6 
                     '>LUKE</span>
 
                     <div className='flex self-center'>
@@ -32,22 +37,28 @@ export default function Footer({}) {
                     </div>
                 </div>
                 
-                <div className='text-center flex flex-col gap-7 mt-12 md:mt-2 '>
+                <div className='text-center flex flex-col gap-7 mt-12 md:mt-2   
+
+                 
+                '>
+                {/* h-full max-h-[500px] */}
                     {/* MAIL */}
-                    <a className='text-center font-extrabold text-2xl self-center w-full justify-center md:mb-40' href="mailto:lucas.a.colman@gmail.com">lucas.a.colman@gmail.com</a>
+                    <a className='text-center font-extrabold text-2xl self-center w-full justify-center 
+                    md:mb-40' 
+                    href="mailto:lucas.a.colman@gmail.com">lucas.a.colman@gmail.com</a>
 
                     {/* SOCIAL MEDIA Y COPYRIGHT */}
                     <div className="flex flex-col gap-7 md:mt-10 md:flex-row  md:justify-between ">
                         {/* SOCIAL MEDIA */}
                         <ul className='flex justify-between px-sm font-bold gap-8'>
                         <li>
-                            <Link href='https://www.github.com' target='_blank' rel="noopener noreferrer">GITHUB</Link>
+                            <Link href='https://www.github.com/Lukecolman' target='_blank' rel="noopener noreferrer">GITHUB</Link>
                         </li>
                         <li>
-                            <Link href='https://www.behance.com' target='_blank' rel="noopener noreferrer">BEHANCE</Link>
+                            <Link href='https://www.behance.net/lukecolman' target='_blank' rel="noopener noreferrer">BEHANCE</Link>
                         </li>
                         <li>
-                            <Link href='https://www.linkedin.com' target='_blank' rel="noopener noreferrer">LINKEDIN</Link>
+                            <Link href='https://www.linkedin.com/in/lukecolman/' target='_blank' rel="noopener noreferrer">LINKEDIN</Link>
                         </li>
                         </ul>
                     
