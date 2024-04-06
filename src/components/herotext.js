@@ -6,44 +6,108 @@ import gsap from "gsap"
 
 
 export default function HeroText({}) {
+
+    const timeline = gsap.timeline(
+        //OBJETO
+            {
+            //     repeat: -1, 
+            // repeatDelay: 1, 
+            // yoyo: true
+        });
+
     useGSAP(() => {
-    gsap.from("#htYourFriendly", {
-        x:-200,
-        repeta: -1,
-        yoyo: true,
-        rotate: 360,
+    timeline.from("#htDescriptionL", {
+        opacity: 0,
+        x:175,
         duration: 2,
-    })
+    }, 0);
+    timeline.from("#htDescriptionR", {
+        opacity: 0,
+        x:-175,
+        duration: 2,
+    },  0);
+    gsap.from(".htStaggerText", {
+        opacity: 0,
+        y:150,
+        // repeat: -1,
+        // yoyo: true,
+        duration: 2,
+        stagger: 0.5,
+    });
+      
+    }, [])
+
+
+    useGSAP(() => {
+
+
+
+    // gsap.from("#htYourFriendly", {
+    //     y:150,
+    //     repeat: -1,
+    //     yoyo: true,
+    //     duration: 2,
+    // }),
+
+    // gsap.from("#htNeighbourhood", {
+    //     y:150,
+    //     repeat: -1,
+    //     yoyo: true,
+    //     duration: 2,
+    // }),
+
+    //APROBADO DESCRIPTION R Y L
+    // gsap.from("#htDescriptionL", {
+    //     opacity: -30,
+    //     x:150,
+    //     repeat: -1,
+    //     yoyo: true,
+    //     duration: 2,
+    // }),
+    // gsap.from("#htDescriptionR", {
+    //     opacity: 0,
+    //     x:-150,
+    //     repeat: -1,
+    //     yoyo: true,
+    //     duration: 2,
+    // })
+    // gsap.from("#htDescriptionText", {
+    //     y:150,
+    //     repeat: -1,
+    //     yoyo: true,
+    //     duration: 2,
+    // })
+    
     
     },[])
 
 
     return(
         <div>
-        <div className='text-center mt-[70px] md:mt-[200px] lg:mt-[400px] '>
+        <div  className='text-center mt-[70px] md:mt-[200px] lg:mt-[400px] '>
             <div id='htYourFriendly' className='text-4xl tracking-[-0.04em] -mb-1 md:text-[72px] 
             md:leading-[5.5rem] 
-            lg:text-[106px] lg:leading-tight lg:mb-0'>
+            lg:text-[106px] lg:leading-tight lg:mb-0 htStaggerText'>
             your&nbsp;
             <span className=' -tracking-[0.6rem] font-normal align-text-bottom md:align-middle md:-tracking-[1.1rem] lg:-tracking-[1.6rem]'>----</span>
             &nbsp; friendly
             </div>
 
-        <div id='htNeighbourhood' className='text-[42px] tracking-[-0.04em] leading-none font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[6.3rem]'>NEIGHBOURHOOD</div>
+        <div id='htNeighbourhood' className='text-[42px] tracking-[-0.04em] leading-none font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[6.3rem] htStaggerText'>NEIGHBOURHOOD</div>
 
-        <div id='htFrontend' className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] lg:text-[114px] lg:flex lg:justify-center lg:leading-tight '>FRONTEND
-          <div id='htDescription' className='hidden max-w-[850px] font-normal text-8xl lg:flex ml-8 items-center pt-1'>
-            (
-            <span className='text-[15px] tracking-normal font-normal leading-snug text-wrap max-w-[280px] align-middle mx-4'>
+        <div id='htFrontend' className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] lg:text-[114px] lg:flex lg:justify-center lg:leading-tight  htStaggerText'>FRONTEND
+          <div id='htDescription' className='hidden max-w-[850px] font-normal text-8xl lg:flex ml-8 items-center pt-1 '>
+            <span id='htDescriptionL'> ( </span>
+            <span id='htDescriptionText' className='text-[15px] tracking-normal font-normal leading-snug text-wrap max-w-[280px] align-middle mx-4'>
                 Hi! I’m Lucas Colman, Frontend Developer from Argentina. But my friends calls me Luke
             </span>
-            )
+            <span id='htDescriptionR'>)</span>
           </div>
         </div>
 
-        <div id='htDeveloper' className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[6.3rem]'>DEVELOPER</div>
+        <div id='htDeveloper' className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[6.3rem] htStaggerText'>DEVELOPER</div>
 
-        <div id='htSuperhero' className='text-base tracking-[-0.04em] font-semibold md:text-[24px] md:leading-[2rem] lg:text-[35px] lg:leading-[3.7rem]'>AND PART-TIME SUPERHERO</div>
+        <div id='htSuperhero' className='text-base tracking-[-0.04em] font-semibold md:text-[24px] md:leading-[2rem] lg:text-[35px] lg:leading-[3.7rem] htStaggerText'>AND PART-TIME SUPERHERO</div>
       </div>
 
       
