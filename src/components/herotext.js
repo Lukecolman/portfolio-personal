@@ -6,7 +6,16 @@ import gsap from "gsap"
 
 
 export default function HeroText({}) {
-
+    useGSAP(() => {
+    gsap.from("#htYourFriendly", {
+        x:-200,
+        repeta: -1,
+        yoyo: true,
+        rotate: 360,
+        duration: 2,
+    })
+    
+    },[])
 
 
     return(
