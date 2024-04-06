@@ -1,29 +1,40 @@
 import Image from 'next/image';
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap"
+
 
 
 export default function HeroText({}) {
+
+
+
     return(
         <div>
         <div className='text-center mt-[70px] md:mt-[200px] lg:mt-[400px] '>
-        <div className='text-4xl tracking-[-0.04em] -mb-1 md:text-[72px] 
-        md:leading-[5.5rem] 
-        lg:text-[106px] lg:leading-tight lg:mb-0'>
-          your&nbsp;
-          <span className=' -tracking-[0.6rem] font-normal align-text-bottom md:align-middle md:-tracking-[1.1rem] lg:-tracking-[1.6rem]'>----</span>
-          &nbsp; friendly
-        </div>
-        <div className='text-[42px] tracking-[-0.04em] leading-none font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[6.3rem]'>NEIGHBOURHOOD</div>
-        <div className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] lg:text-[114px] lg:flex lg:justify-center lg:leading-tight '>FRONTEND
-          <div className='hidden max-w-[850px] font-normal text-8xl lg:flex ml-8 items-center pt-1'>
+            <div id='htYourFriendly' className='text-4xl tracking-[-0.04em] -mb-1 md:text-[72px] 
+            md:leading-[5.5rem] 
+            lg:text-[106px] lg:leading-tight lg:mb-0'>
+            your&nbsp;
+            <span className=' -tracking-[0.6rem] font-normal align-text-bottom md:align-middle md:-tracking-[1.1rem] lg:-tracking-[1.6rem]'>----</span>
+            &nbsp; friendly
+            </div>
+
+        <div id='htNeighbourhood' className='text-[42px] tracking-[-0.04em] leading-none font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[6.3rem]'>NEIGHBOURHOOD</div>
+
+        <div id='htFrontend' className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] lg:text-[114px] lg:flex lg:justify-center lg:leading-tight '>FRONTEND
+          <div id='htDescription' className='hidden max-w-[850px] font-normal text-8xl lg:flex ml-8 items-center pt-1'>
             (
             <span className='text-[15px] tracking-normal font-normal leading-snug text-wrap max-w-[280px] align-middle mx-4'>
-                Acá va texto simulado hasta que me me ocurra que poder poner jeje
-              </span>
+                Hi! I’m Lucas Colman, Frontend Developer from Argentina. But my friends calls me Luke
+            </span>
             )
           </div>
         </div>
-        <div className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[6.3rem]'>DEVELOPER</div>
-        <div className='text-base tracking-[-0.04em] font-semibold md:text-[24px] md:leading-[2rem] lg:text-[35px] lg:leading-[3.7rem]'>AND PART-TIME SUPERHERO</div>
+
+        <div id='htDeveloper' className='text-[42px] tracking-[-0.04em] leading-none  font-semibold md:text-[84px] md:leading-[4.5rem] lg:text-[114px] lg:leading-[6.3rem]'>DEVELOPER</div>
+
+        <div id='htSuperhero' className='text-base tracking-[-0.04em] font-semibold md:text-[24px] md:leading-[2rem] lg:text-[35px] lg:leading-[3.7rem]'>AND PART-TIME SUPERHERO</div>
       </div>
 
       
@@ -45,6 +56,7 @@ export default function HeroText({}) {
           </text>
         </svg>
         <Image
+            id='arrow'
             src="/arrow.svg"
             alt="arrow"
             className="absolute w-[5%] max-w-[20px]  md:max-w-[30px] lg:max-w-[35px]"
