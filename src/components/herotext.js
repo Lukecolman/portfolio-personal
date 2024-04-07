@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap"
+gsap.registerPlugin(ScrollTrigger)
 
 
 
@@ -31,8 +32,18 @@ export default function HeroText({}) {
         y:150,
         // repeat: -1,
         // yoyo: true,
-        duration: 2,
+        duration: 1,
         stagger: 0.5,
+        scrollTrigger: {
+          // trigger: ".htStaggerText",
+          start: "7% 17%",
+          end: "center 20%",
+          // markers: true,
+          // scrub: true,
+
+
+      }
+
     });
       
     }, [])
@@ -84,6 +95,7 @@ export default function HeroText({}) {
 
     return(
         <div>
+
         <div  className='text-center mt-[70px] md:mt-[200px] lg:mt-[400px] '>
             <div id='htYourFriendly' className='text-4xl tracking-[-0.04em] -mb-1 md:text-[72px] 
             md:leading-[5.5rem] 
@@ -122,7 +134,7 @@ export default function HeroText({}) {
                 a 37,37 0 1,1 74,0
                 a 37,37 0 1,1 -74,0"/>
           </defs>
-          <text font-size="14.7" >
+          <text  className='text-[14.7px]' >
             <textPath href="#circle">
              MADAFAKA IM LUKE HELLO
             </textPath>

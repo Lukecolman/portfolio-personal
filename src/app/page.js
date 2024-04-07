@@ -183,6 +183,7 @@ export default function Home() {
           </motion.div> 
 
           {/* FOOTER  */}
+
           <Footer/>
         </main>
     );
