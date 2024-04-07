@@ -12,7 +12,8 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 
 import Navbar from '@/components/navbar';
 import WorkCards from '@/components/work-card';
-import TechStack from '@/components/tech-stack';
+// import TechStack from '@/components/techStack';
+import TechMarquee from '@/components/techMarquee';
 import Jobs from '@/components/jobs';
 import Footer from '@/components/footer';
 import HeroBanner from '@/components/herobanner';
@@ -117,7 +118,7 @@ export default function Home() {
       </div>
 
 
-        {/* TECHSTACK TITLE */}
+        {/* TECHSTACK */}
         <div className='select-none w-full 
         md:mt-64'>
         <div className='w-full  text-center mt-40 mb-5 flex flex-col relative justify-center items-center '>
@@ -132,10 +133,12 @@ export default function Home() {
 
 
         </div>
-          {/* ACA VA EL MARQUEE */}
-          <TechStack className='mt-4'/>
+          <TechMarquee className='mt-4'/>
 
         </div>
+
+        {/* POR ALGUNA RAZON DE ESTA FORMA NO ANDA
+        <TechStack/> */}
 
 
         {/* EXPERIENCE HISTORY TITLE*/}

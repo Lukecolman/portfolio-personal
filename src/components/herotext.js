@@ -29,10 +29,10 @@ export default function HeroText({}) {
     },  0);
     gsap.from(".htStaggerText", {
         opacity: 0,
-        y:150,
+        y:"100%",
         // repeat: -1,
         // yoyo: true,
-        duration: 1,
+        duration: 0.75,
         stagger: 0.5,
         scrollTrigger: {
           // trigger: ".htStaggerText",
