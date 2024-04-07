@@ -4,17 +4,17 @@
 
 export default function Footer({}) {
     return (
-        <div className='bg-lk-red-800  text-white relative px-sm pt-sm pb-sm  w-full overflow-hidden 
+        <div className='bg-lk-red-600  text-white relative px-sm pt-sm pb-sm  w-full overflow-hidden 
         lg:px-md lg:pb-[1rem] lg:items-center 
          '>
-                          <span className=" font-noto text-[#F74746] font-black text-[190px] absolute  left-1/2 transform -translate-x-1/2 [writing-mode:vertical-lr] text-nowrap leading-[10px]
-                md:[writing-mode:horizontal-tb] md:text-[550px] md:text-center md:overflow-visible  md:top-0 md:bottom-0 md:mx-auto  md:tracking-[-0.09em] bg-blue-200 ">
+                          <span className=" font-noto text-[#F74746] font-black text-[190px] absolute  left-1/2 transform -translate-x-1/2 [writing-mode:vertical-lr] text-nowrap leading-[10px] content-center
+                md:[writing-mode:horizontal-tb] md:text-[550px] md:text-center md:overflow-visible  md:top-0 md:bottom-0 md:mx-auto md:-translate-y-8  md:tracking-[-0.09em]  ">
                 コルマン
                 </span>
 
             <div className=' mt-sm h-[85vh]
             md:h-[96vh] md:flex md:flex-col md:content-between md:justify-between
-            lg:max-w-[2244px] lg:mx-auto bg-green-200
+            lg:max-w-[2244px] lg:mx-auto 
             '>
       
       {/* BG TEXT */}
