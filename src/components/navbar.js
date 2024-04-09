@@ -1,4 +1,4 @@
-
+import GsapMagnetic from "./extras/gsapMagnetic";
 
 export default function Navbar({}) {
     return(
@@ -14,7 +14,7 @@ export default function Navbar({}) {
             <div className="font-light mx-auto ">
               Last visit from Chaco, Argentina
             </div>
-            <a className="font-light" href="mailto:lucas.a.colman@gmail.com">lucas.a.colman@gmail.com</a>
+            <a className="font-light under-line-css" href="mailto:lucas.a.colman@gmail.com">lucas.a.colman@gmail.com</a>
             </div>
           </div>
         </nav>

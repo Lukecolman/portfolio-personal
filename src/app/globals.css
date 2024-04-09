@@ -56,3 +56,55 @@ body {
   border-radius: 0% 0% 50% 50%;
   z-index: 10;
 }
+
+.js-work-link {
+  color: black;
+  text-decoration: none;
+  font-size: 50px;
+  position: relative;
+
+
+
+}
+
+/* // Underline animated via JS
+// Based on: https://details.ch/en/apropos (check the menu) */
+.underline {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 0; 
+  height: calc(1px + 0.6vw);
+  background-color: red;
+}
+
+
+/* TEST UNDERLINE */
+
+.under-line-css{
+  position: relative;
+  text-decoration: none;
+}
+.under-line-css:after{
+  content: "";
+  position: absolute;
+  background-color: #F9F9F9;
+  height: 0px;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+  transition: 0.3s;
+  transform: rotatex(180deg);
+  transform-origin: bottom;
+
+}
+.under-line-css.under-line-red:after{
+  background-color: #f51918;
+}
+/* .under-line-css:hover{
+  color: blue;
+} */
+.under-line-css:hover:after{
+  height: 6px;
+}

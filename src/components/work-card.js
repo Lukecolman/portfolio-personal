@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function WorkCards({ projectInfo }) {
     return (
         <a href={projectInfo.url} target='_blank' rel="noopener noreferrer">
-        <div className='min-h-[636px] w-full rounded-2xl overflow-hidden bg-lk-grey text-white text-center lg:flex'>
+        <div className='min-h-[636px] w-full rounded-2xl overflow-hidden bg-lk-grey text-white text-center   lg:flex'>
 
             {/* IMAGE */}
             <div>
@@ -14,7 +14,7 @@ export default function WorkCards({ projectInfo }) {
             
             {/* TEXT */}
             <div className='py-7 px-5 flex flex-col gap-4 text-wrap 
-            lg:text-left lg:p-md lg:min-w-[500px]'>
+            lg:text-left lg:p-md lg:min-w-[500px] lg:max-w-[500px]'>
                 <div className='flex flex-col bg-green'>
                     {projectInfo.tag.map((tag, index) => (
                         <span className='font-poppins font-semibold leading-[131.1%] lg:text-[20px]' key={index}>

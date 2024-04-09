@@ -8,7 +8,6 @@ import { useRef } from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useScroll, useTransform, motion } from 'framer-motion';
 
 import Navbar from '@/components/navbar';
 import WorkCards from '@/components/work-card';
@@ -18,10 +17,20 @@ import Jobs from '@/components/jobs';
 import Footer from '@/components/footer';
 import HeroBanner from '@/components/herobanner';
 import HeroText from '@/components/herotext';
+import AnimationTest from '@/components/animationsFull';
+
+// ANIMACIONES 
+import { useScroll, useTransform, motion } from 'framer-motion';
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap"
+gsap.registerPlugin(ScrollTrigger)
+
 
 
 export default function Home() {
 
+  // SMOOTH SCROLL FOR THE WEB
   useEffect( () => {
 
     (
@@ -38,6 +47,8 @@ export default function Home() {
 
   }, [])
 
+
+  // FOOTER BENDING
   const container = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -57,20 +68,78 @@ export default function Home() {
     // Información de los proyectos
     const projectInfo = [
       {
-        tag: ['DESARROLLO WEB', 'COSO DIGITAL'],
-        title: 'Descripción del Proyecto 1',
+        tag: ['web development'],
+        title: 'ENVIOPACK',
         img: '/projects/image-294.jpg',
         url: 'http://www.google.com',
         techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
       },
       {
-        tag: ['Tag1', 'Tag2', 'Tag3'],
-        title: 'Descripción del Proyecto 2',
+        tag: ['web development'],
+        title: 'COMIC STORE',
         img: '/projects/image-294.jpg',
         url: 'http://www.google.com',
         techIcons: ['/tech-icons/react.svg', '/tech-icons/nextjs.svg', '/tech-icons/tailwind.svg'],
       },
+      {
+        tag: ['web development'],
+        title: 'MUJERES AL VUELO',
+        img: '/projects/image-294.jpg',
+        url: 'http://www.google.com',
+        techIcons: ['/tech-icons/html5.svg', '/tech-icons/css3.svg', '/tech-icons/tailwind.svg'],
+      },
     ];
+
+
+    // ANIMACIONES EN GSAP
+    useGSAP(() => {
+      gsap.from(".japanese-letter2", {
+        y: 300,
+        ease: "power4.out",
+        delay: 1,
+        // skewY: 21,
+        opacity: 0,
+        stagger: {
+        amount: 0.2,
+        axis: "y",
+        grid: [2, 1],
+        from: "center",
+     },
+      yoyo: true,
+      repeat: -1,
+    })
+
+    
+    gsap.from("#selected2", {
+        y: 100,
+        ease: "power4.out",
+        delay: 1,
+        // skewY: 21,
+        opacity: 0,
+        stagger: {
+        amount: 0.2,
+        axis: "y",
+        grid: [2, 1],
+        from: "center",
+     },
+      yoyo: true,
+      repeat: -1,
+    })
+
+    
+    gsap.from("#works2", {
+        y: 300,
+        ease: "power4.out",
+        delay: 1,
+        // skewY: 21,
+        opacity: 0,
+        stagger: {
+            amount: 0.9, },
+
+      yoyo: true,
+      repeat: -1,
+    })
+  }, []);
 
     return (
         <main className='flex min-h-screen flex-col items-center justify-between font-poppins overflow-x-hidden '>
@@ -116,6 +185,8 @@ export default function Home() {
           MORE PROJECTS SOON
         </a>
       </div>
+
+      <AnimationTest/>
 
 
         {/* TECHSTACK */}
@@ -169,7 +240,7 @@ export default function Home() {
         lg:px-md lg:max-w-[2244px]'>
           <Jobs/>
 
-          <a href="http://www.google.com" target='_blank' className='text-center font-extrabold text-2xl 
+          <a href="http://www.google.com" target='_blank' className='under-line-css under-line-red >text-center font-extrabold text-2xl w-fit self-center
           md:mt-3 md:text-3xl'>
           DOWNLOAD CV
         </a>

@@ -2,15 +2,33 @@ export default function Jobs ({}) {
     const JobItem = [
         {
             role: 'Frontend Developer',
-            company: 'VIXEL Agency',
-            period: 'Enero 2023 - Febrero 2024',
+            company: 'VIXEL',
+            period: '2023 - Present',
             type: 'Remote',
           },
           {
-            role: 'Frontend Developer',
-            company: 'VIXEL Agency',
-            period: 'Enero 2023 - Febrero 2024',
+            role: 'UI Developer / Designer',
+            company: 'Ciudad Autonoma de Buenos Aires',
+            period: '2022 - 2024',
             type: 'Remote',
+          },
+          {
+            role: 'Video Editor',
+            company: 'Circulo Creativo',
+            period: '2022 - 2023',
+            type: 'Remote',
+          },
+          {
+            role: 'Graphic Designer / Photographer',
+            company: 'Freelance',
+            period: '2018 - Present',
+            type: 'Remote',
+          },          
+          {
+            role: 'Graphic Designer / Photographer',
+            company: 'Lopez Hnos.',
+            period: '2017 - 2019',
+            type: 'On site',
           },
     ]
     return (
