@@ -18,6 +18,7 @@ import Footer from '@/components/footer';
 import HeroBanner from '@/components/herobanner';
 import HeroText from '@/components/herotext';
 import AnimationTest from '@/components/animationsFull';
+import PreLoader from '@/components/Loader/preLoader';
 
 // ANIMACIONES 
 import { useScroll, useTransform, motion } from 'framer-motion';
