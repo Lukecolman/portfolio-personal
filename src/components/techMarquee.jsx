@@ -43,7 +43,7 @@ const TechMarquee = () => {
     <div         id="redBanner" >
     <Marquee
 
-        className="bg-lk-red-600 py-5 text-white md:py-10"
+        className="bg-lk-red-600 py-5 text-white  md:py-10 "
         autoFill={true}
     >
         {tech.map((tech, index) => (

@@ -6,18 +6,19 @@ export default function WorkCards({ projectInfo }) {
         <div className='min-h-[636px] w-full rounded-2xl overflow-hidden bg-lk-grey text-white text-center   lg:flex'>
 
             {/* IMAGE */}
-            <div>
+            <div className='lg:max-h-[826px] lg:max-w-[1200px]'>
             <img className='h-[439px] w-full object-cover
-            lg:h-[826px] lg:max-w-[1200px] lg:object-cover 
+            hover:scale-105  transition-transform	duration-200
+            lg:h-[826px] lg:max-w-[1200px] lg:object-cover  
             ' src={projectInfo.img} />
             </div>
             
             {/* TEXT */}
-            <div className='py-7 px-5 flex flex-col gap-4 text-wrap 
+            <div className='z-50 bg-lk-grey py-7 px-5 flex flex-col gap-4 text-wrap 
             lg:text-left lg:p-md lg:min-w-[500px] lg:max-w-[500px]'>
                 <div className='flex flex-col bg-green'>
                     {projectInfo.tag.map((tag, index) => (
-                        <span className='font-poppins font-semibold leading-[131.1%] lg:text-[20px]' key={index}>
+                        <span className='font-haetten  leading-[131.1%] lg:text-[30px]' key={index}>
                             {' '}
                             {tag}{' '}
                         </span>

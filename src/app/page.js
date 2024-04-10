@@ -68,21 +68,21 @@ export default function Home() {
     // Información de los proyectos
     const projectInfo = [
       {
-        tag: ['web development'],
+        tag: ['WEB DEVELOPMENT'],
         title: 'ENVIOPACK',
         img: '/projects/image-294.jpg',
         url: 'http://www.google.com',
         techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
       },
       {
-        tag: ['web development'],
+        tag: ['WEB DEVELOPMENT'],
         title: 'COMIC STORE',
         img: '/projects/image-294.jpg',
         url: 'http://www.google.com',
         techIcons: ['/tech-icons/react.svg', '/tech-icons/nextjs.svg', '/tech-icons/tailwind.svg'],
       },
       {
-        tag: ['web development'],
+        tag: ['WEB DEVELOPMENT'],
         title: 'MUJERES AL VUELO',
         img: '/projects/image-294.jpg',
         url: 'http://www.google.com',
@@ -92,11 +92,24 @@ export default function Home() {
 
 
     // ANIMACIONES EN GSAP
+
+    const timeline = gsap.timeline(
+      //OBJETO
+          {
+            markers: true,
+
+              repeat: -1, 
+          repeatDelay: 1, 
+          yoyo: true
+      });
+
+
     useGSAP(() => {
       gsap.from(".japanese-letter2", {
         y: 300,
         ease: "power4.out",
-        delay: 1,
+        delay: 0.5,
+        duration: 1.5,
         // skewY: 21,
         opacity: 0,
         stagger: {
@@ -105,40 +118,88 @@ export default function Home() {
         grid: [2, 1],
         from: "center",
      },
-      yoyo: true,
-      repeat: -1,
-    })
+      // yoyo: true,
+      // repeat: -1,
+      scrollTrigger: {
+        trigger: ".japanese-letter2",
+        start: "top 80%",
+        end: "+=100",
+        markers: true,
+    }
+    });
+
+    gsap.from(".japanese-letter", {
+      y: 200,
+      ease: "power4.out",
+      delay: 0.5,
+      skewY: 21,
+      opacity: 0,
+      stagger: {
+        amount: 0.5, },
+
+    scrollTrigger: {
+      trigger: ".japanese-letter",
+      start: "bottom 90%",
+      end: "+=100",
+      markers: true,
+  }
+  })
+
+  gsap.from(".japanese-letter3", {
+    y: 200,
+    ease: "power4.out",
+    delay: 0.5,
+    skewY: 21,
+    opacity: 0,
+    stagger: {
+      amount: 0.5,
+      axis: "y",
+      grid: [2, 1],
+      from: "center",
+    },
+
+  scrollTrigger: {
+    trigger: ".japanese-letter3",
+    start: "top 95%",
+    end: "+=100",
+    markers: true,
+}
+})
+
+
 
     
-    gsap.from("#selected2", {
-        y: 100,
-        ease: "power4.out",
-        delay: 1,
-        // skewY: 21,
-        opacity: 0,
-        stagger: {
-        amount: 0.2,
-        axis: "y",
-        grid: [2, 1],
-        from: "center",
-     },
-      yoyo: true,
-      repeat: -1,
-    })
+    // gsap.from("#selected2", {
+    //     y: 100,
+    //     ease: "power4.out",
+    //     delay: 1,
+    //     // skewY: 21,
+    //     opacity: 0,
+    //     stagger: {
+    //     amount: 0.2,
+    //     axis: "y",
+    //     grid: [2, 1],
+    //     from: "center",
+    //  },
+    //   yoyo: true,
+    //   repeat: -1,
+    // })
 
     
-    gsap.from("#works2", {
-        y: 300,
-        ease: "power4.out",
-        delay: 1,
-        // skewY: 21,
-        opacity: 0,
-        stagger: {
-            amount: 0.9, },
+    // gsap.from("#works2", {
+    //     y: 300,
+    //     ease: "power4.out",
+    //     delay: 1,
+    //     // skewY: 21,
+    //     opacity: 0,
+    //     stagger: {
+    //         amount: 0.9, },
 
-      yoyo: true,
-      repeat: -1,
-    })
+    //   yoyo: true,
+    //   repeat: -1,
+    // })
+
+
   }, []);
 
     return (
@@ -157,8 +218,8 @@ export default function Home() {
       <HeroText/>
         
 
-        {/*WORK TITLE */}
-        <div className='select-none w-full  text-center mt-20 flex flex-col relative justify-center items-center overflow-x-hidden overflow-y-hidden'>
+        {/*WORK TITLE OLD */}
+        {/* <div className='select-none w-full  text-center mt-20 flex flex-col relative justify-center items-center overflow-x-hidden overflow-y-hidden'>
           <span className='text-[7.7rem] leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em]  pb-3 
           md:text-[447.22px]'>
           入選作品
@@ -172,6 +233,32 @@ export default function Home() {
             WORKS
           </h2>
 
+        </div> */}
+
+
+              {/*WORK TITLE NEW*/}
+              <div className='select-none w-full  text-center mt-20 flex flex-col relative justify-center items-center overflow-x-hidden overflow-y-hidden'>
+          <span className='text-[7.7rem] leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em]  pb-3 
+          md:text-[447.22px]'>
+          <span className="japanese-letter2">入</span>
+          <span className="japanese-letter2">選</span>
+          <span className="japanese-letter2">作</span>
+          <span className="japanese-letter2">品</span>
+
+          </span>
+          <div className='flex flex-col absolute  overflow-y-hidden'>
+
+          <span id="selected2" className='font-crimson text-[1.7rem] font-semibold  -mb-5 
+          md:text-[65px] md:mb-[-4.5rem] overflow-y-hidden'>
+            selected
+            </span>
+          <h2 id='works2' className='font-haetten  text-8xl  
+          md:text-[287.55px]  '>
+            WORKS
+          </h2>
+          </div>
+
+
         </div>
 
         {/* WORKS */}
@@ -180,23 +267,32 @@ export default function Home() {
           <WorkCards key={index} projectInfo={project} />
         ))}
 
-        <a url="#" className='font-extrabold text-2xl hover:cursor-pointer 
-        md:mt-3 md:text-3xl'>
-          MORE PROJECTS SOON
-        </a>
+        <div url="#" className='font-extrabold text-lg
+        md:mt-3 md:text-xl'>
+          <span id='moreProjectsL'>&#123;	</span>
+          more projects soon
+          <span id='moreProjectsR'> &#125;</span>
+        </div>
       </div>
 
-      <AnimationTest/>
+      {/* <AnimationTest/> */}
 
 
         {/* TECHSTACK */}
         <div className='select-none w-full 
         md:mt-64'>
         <div className='w-full  text-center mt-40 mb-5 flex flex-col relative justify-center items-center '>
-          <span className='pl-4 text-6xl  leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em] absolute -top-8 -z-10 
+          <dev className='pl-4 text-6xl  leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em] absolute -top-8 -z-10 
           md:text-[140px] md:-top-20 md:pl-6'>
-          技術スタック
-          </span>
+          {/* 技術スタック */}
+          <span className="japanese-letter3">技</span>
+          <span className="japanese-letter3">術</span>
+          <span className="japanese-letter3">ス</span>
+          <span className="japanese-letter3">タ</span>
+          <span className="japanese-letter3">ッ</span>
+          <span className="japanese-letter3">ク</span>
+
+          </dev>
           <h2 className='italic font-extrabold flex flex-col text-5xl 
           md:text-[104px] '>
             TECH-STACK
@@ -216,10 +312,14 @@ export default function Home() {
         <div className='select-none w-full  text-left mt-40 flex  relative justify-left items-left  overflow-visible px-sm 
         md:mt-64 
         lg:px-md lg:max-w-[2244px]'>
-          <span className='text-7xl  font-noto font-black text-lk-red-50 overflow-visible text-nowrap absolute -top-4 pb-3 -z-10 
-          md:text-9xl md:-top-10'>
-          経験履歴
-          </span>
+          <div className='text-7xl  font-noto font-black text-lk-red-50 overflow-visible text-nowrap absolute -top-4 pb-3 -z-10 
+          md:text-9xl md:-top-10 bg-green-300'>
+          
+          <span className="japanese-letter">経</span>
+<span className="japanese-letter">験</span>
+<span className="japanese-letter">履</span>
+<span className="japanese-letter">歴</span>
+          </div>
           <h2 className='font-poppins font-extrabold italic flex flex-col text-6xl 
           md:text-[104px] '>
             <span className='font-crimson not-italic font-semibold text-4xl pl-1 
