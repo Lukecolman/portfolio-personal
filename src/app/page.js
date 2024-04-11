@@ -235,7 +235,7 @@ export default function Home() {
                 </div>
 
                 {/* WORKS */}
-                <div className='w-[inherit] flex flex-col justify-center items-center gap-8 px-md lg:mx-md'>
+                <div className='w-[inherit] flex flex-col justify-center items-center gap-8 px-sm md:px-md'>
                     {projectInfo.map((project, index) => (
                         <WorkCards key={index} projectInfo={project} />
                     ))}
