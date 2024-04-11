@@ -73,6 +73,7 @@ export default function Home() {
         title: 'ENVIOPACK',
         imgDesktop: '/projects/desktop.jpg',
         imgMobile: '/projects/mobile.jpg',
+        imgBgColor: 'E4E6E5',
         url: 'http://www.google.com',
         techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
       },
@@ -264,7 +265,7 @@ export default function Home() {
         </div>
 
         {/* WORKS */}
-        <div className='w-[inherit] flex flex-col justify-center items-center gap-8 px-md lg:mx-md bg-orange-400'>
+        <div className='w-[inherit] flex flex-col justify-center items-center gap-8 px-md lg:mx-md'>
         {projectInfo.map((project, index) => (
           <WorkCards key={index} projectInfo={project} />
         ))}
@@ -315,7 +316,7 @@ export default function Home() {
         md:mt-64 
         lg:px-md lg:max-w-[2244px]'>
           <div className='text-7xl  font-noto font-black text-lk-red-50 overflow-visible text-nowrap absolute -top-4 pb-3 -z-10 
-          md:text-9xl md:-top-10 bg-green-300'>
+          md:text-9xl md:-top-10'>
           
           <span className="japanese-letter">経</span>
 <span className="japanese-letter">験</span>

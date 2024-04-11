@@ -2,12 +2,12 @@ import Image from 'next/image';
 
 export default function WorkCards({ projectInfo }) {
     return (
-        <a href={projectInfo.url} target='_blank' rel='noopener noreferrer ' className='w-full '>
-            <div className='min-h-screen w-full  text-lk-red-600 text-center  '>
+        <a href={projectInfo.url} target='_blank' rel='noopener noreferrer ' className='w-full'>
+            <div className=' w-full  text-lk-red-600 text-center  '>
                 {/* TEXT-BOX */}
                 <div
                     className='z-50 pb-7 flex gap-4 text-wrap 
-                    lg:text-left justify-between  w-full bg-violet-300'>
+                    lg:text-left justify-between  w-full'>
 
                     {/* TITLE OF THE PROJECT */}
                     <h3
@@ -37,7 +37,7 @@ export default function WorkCards({ projectInfo }) {
                 </div>
 
                 {/* RED LINE */}
-                <div className='bg-lk-red-600 w-full h-1 mb-11' />
+                <div className='bg-lk-red-600 w-full h-1 mb-8' />
 
                 {/* IMAGE */}
                 {/* <div className='flex gap-7 min-w-full w-full overflow-hidden justify-center items-center bg-white md:bg-blue-400 lg:max-h-[594px]  '> */}
@@ -62,14 +62,25 @@ export default function WorkCards({ projectInfo }) {
 
                 {/* </div> */}
 
-                <div className="w-full flex flex-nowrap">
+                <div className="flex flex-nowrap gap-7">
                     {/* Div menor izquierda */}
-                    <div className="flex-grow bg-red-500 h-[594px] lg:w-full 
-                    
-                    "></div>
+                    <div className={`flex bg-[#${projectInfo.imgBgColor}] h-[594px] lg:w-full justify-center items-center`}>
+                        <img
+                                className='h-[439px] w-full max-w-[904px] object-contain	 hover:scale-105 transition-transform duration-200
+                                lg:h-full lg:max-h-[530px] '
+                                src={projectInfo.imgDesktop}
+                                loading="lazy"
+                            />
+                    </div>
 
                     {/* Div menor derecha */}
-                    <div className="flex-none bg-blue-500 h-[594px] lg:w-[392px]"></div>
+                    <div className={`flex bg-[#${projectInfo.imgBgColor}] h-[594px] lg:w-[392px] justify-center items-center`}>
+                        <img
+                            className='h-[439px] w-full object-contain hover:scale-105 transition-transform duration-200
+                            lg:h-full lg:max-h-[530px]  lg:max-w-[293px]'
+                            src={projectInfo.imgMobile}
+                        />
+                    </div>
                 </div>
                 
             </div>
