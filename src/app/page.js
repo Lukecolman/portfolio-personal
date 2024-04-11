@@ -71,24 +71,25 @@ export default function Home() {
       {
         tag: ['WEB DEVELOPMENT'],
         title: 'ENVIOPACK',
-        img: '/projects/image-294.jpg',
+        imgDesktop: '/projects/desktop.jpg',
+        imgMobile: '/projects/mobile.jpg',
         url: 'http://www.google.com',
         techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
       },
-      {
-        tag: ['WEB DEVELOPMENT'],
-        title: 'COMIC STORE',
-        img: '/projects/image-294.jpg',
-        url: 'http://www.google.com',
-        techIcons: ['/tech-icons/react.svg', '/tech-icons/nextjs.svg', '/tech-icons/tailwind.svg'],
-      },
-      {
-        tag: ['WEB DEVELOPMENT'],
-        title: 'MUJERES AL VUELO',
-        img: '/projects/image-294.jpg',
-        url: 'http://www.google.com',
-        techIcons: ['/tech-icons/html5.svg', '/tech-icons/css3.svg', '/tech-icons/tailwind.svg'],
-      },
+      // {
+      //   tag: ['WEB DEVELOPMENT'],
+      //   title: 'COMIC STORE',
+      //   img: '/projects/image-294.jpg',
+      //   url: 'http://www.google.com',
+      //   techIcons: ['/tech-icons/react.svg', '/tech-icons/nextjs.svg', '/tech-icons/tailwind.svg'],
+      // },
+      // {
+      //   tag: ['WEB DEVELOPMENT'],
+      //   title: 'MUJERES AL VUELO',
+      //   img: '/projects/image-294.jpg',
+      //   url: 'http://www.google.com',
+      //   techIcons: ['/tech-icons/html5.svg', '/tech-icons/css3.svg', '/tech-icons/tailwind.svg'],
+      // },
     ];
 
 
@@ -263,7 +264,7 @@ export default function Home() {
         </div>
 
         {/* WORKS */}
-        <div className='flex flex-col justify-center items-center gap-8 px-sm lg:px-md'>
+        <div className='w-[inherit] flex flex-col justify-center items-center gap-8 px-md lg:mx-md bg-orange-400'>
         {projectInfo.map((project, index) => (
           <WorkCards key={index} projectInfo={project} />
         ))}

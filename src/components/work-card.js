@@ -2,40 +2,77 @@ import Image from 'next/image';
 
 export default function WorkCards({ projectInfo }) {
     return (
-        <a href={projectInfo.url} target='_blank' rel="noopener noreferrer">
-        <div className='min-h-[636px] w-full rounded-2xl overflow-hidden bg-lk-grey text-white text-center   lg:flex'>
+        <a href={projectInfo.url} target='_blank' rel='noopener noreferrer ' className='w-full '>
+            <div className='min-h-screen w-full  text-lk-red-600 text-center  '>
+                {/* TEXT-BOX */}
+                <div
+                    className='z-50 pb-7 flex gap-4 text-wrap 
+                    lg:text-left justify-between  w-full bg-violet-300'>
 
-            {/* IMAGE */}
-            <div className='lg:max-h-[826px] lg:max-w-[1200px]'>
-            <img className='h-[439px] w-full object-cover
-            hover:scale-105  transition-transform	duration-200
-            lg:h-[826px] lg:max-w-[1200px] lg:object-cover  
-            ' src={projectInfo.img} />
-            </div>
-            
-            {/* TEXT */}
-            <div className='z-50 bg-lk-grey py-7 px-5 flex flex-col gap-4 text-wrap 
-            lg:text-left lg:p-md lg:min-w-[500px] lg:max-w-[500px]'>
-                <div className='flex flex-col bg-green'>
-                    {projectInfo.tag.map((tag, index) => (
-                        <span className='font-haetten  leading-[131.1%] lg:text-[30px]' key={index}>
-                            {' '}
-                            {tag}{' '}
-                        </span>
-                    ))}
-                </div>
-                <h3 className='font-haetten text-6xl pb-2
-                lg:text-[100px] lg:max-w-[497px] lg:mt-auto
-                '>{projectInfo.title}</h3>
-                <div className='flex justify-center gap-5 py-1 
-                lg:justify-start lg:mt-10
+                    {/* TITLE OF THE PROJECT */}
+                    <h3
+                        className='font-haetten text-6xl pb-2 text-end	
+                        lg:text-[11rem] lg:mt-auto leading-[0.7] '>
+                        {projectInfo.title}
+                    </h3>
+
+                    {/* TAG TEXT */}
+                    <div className='  h-full flex self-end'>
+                        {projectInfo.tag.map((tag, index) => (
+                            <span
+                                className=' self-end leading-[0.8] lg:text-[1.5rem] font-semibold '
+                                key={index}>
+                                {' '}
+                                {tag}{' '}
+                            </span>
+                        ))}
+                    </div>
+                    {/* <div className='flex justify-center gap-5 py-1 
+                lg:justify-start lg:mt-10 bg-violet-400
                 '>
                     {projectInfo.techIcons.map((icon, index) => (
-                        <img className='h-[30px]' src={icon} key={index} />
+                        <img className='h-[30px] bg-green-300' src={icon} key={index} />
                     ))}
+                </div> */}
                 </div>
+
+                {/* RED LINE */}
+                <div className='bg-lk-red-600 w-full h-1 mb-11' />
+
+                {/* IMAGE */}
+                {/* <div className='flex gap-7 min-w-full w-full overflow-hidden justify-center items-center bg-white md:bg-blue-400 lg:max-h-[594px]  '> */}
+
+                    {/* DESKTOP */}
+                    {/* <div className=' h-screen w-full flex justify-center items-center bg-green-400'>
+                        <img
+                            className='h-[439px] w-full max-w-[904px] object-contain	 hover:scale-105 transition-transform duration-200
+                               lg:h-full lg:max-h-[530px] '
+                            src={projectInfo.imgDesktop}
+                        />
+                    </div> */}
+
+                    {/* MOBILE */}
+                    {/* <div className='flex h-screen w-full max-w-[392px] lg:max-w-[392px] lg:max-h-[594px] justify-center items-center bg-[#E4E6E5]'>
+                        <img
+                            className='  h-[439px] w-full object-contain   hover:scale-105 transition-transform duration-200
+                            lg:h-full lg:max-h-[530px]  lg:max-w-[293px]   '
+                            src={projectInfo.imgMobile}
+                        />
+                    </div> */}
+
+                {/* </div> */}
+
+                <div className="w-full flex flex-nowrap">
+                    {/* Div menor izquierda */}
+                    <div className="flex-grow bg-red-500 h-[594px] lg:w-full 
+                    
+                    "></div>
+
+                    {/* Div menor derecha */}
+                    <div className="flex-none bg-blue-500 h-[594px] lg:w-[392px]"></div>
+                </div>
+                
             </div>
-        </div>
         </a>
     );
 }
