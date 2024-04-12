@@ -53,7 +53,7 @@ export default function Home() {
             title: 'ENVIOPACK',
             imgDesktop: '/projects/desktop.jpg',
             imgMobile: '/projects/mobile.jpg',
-            imgBgColor: 'E4E6E5',
+            imgBgColor: 'bg-[#E6E8E7]',
             url: 'http://www.google.com',
             techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
         },
@@ -235,7 +235,7 @@ export default function Home() {
                 </div>
 
                 {/* WORKS */}
-                <div className='w-[inherit] flex flex-col justify-center items-center gap-8 px-sm md:px-md'>
+                <div className='w-[inherit] flex flex-col justify-center items-center gap-8 px-sm lg:px-md'>
                     {projectInfo.map((project, index) => (
                         <WorkCards key={index} projectInfo={project} />
                     ))}
