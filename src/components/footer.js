@@ -4,23 +4,23 @@ export default function Footer({}) {
     return (
         <div
             className='bg-lk-red-600  text-white relative px-sm pt-sm pb-sm  w-full overflow-hidden 
-        lg:px-md lg:pb-[1rem] lg:items-center 
+        lg:px-md lg:pb-[1rem] lg:items-center z-0 
          '>
             <span
-                className=' font-noto text-[#F74746] font-black text-[190px] absolute  left-1/2 transform -translate-x-1/2 [writing-mode:vertical-lr] text-nowrap leading-[10px] content-center
+                className='-z-50 font-noto text-[#F74746] font-black text-[190px] absolute  left-1/2 transform -translate-x-1/2 [writing-mode:vertical-lr] text-nowrap leading-[10px] content-center
                 md:[writing-mode:horizontal-tb] md:text-[550px] md:text-center md:overflow-visible  md:top-0 md:bottom-0 md:mx-auto md:-translate-y-8  md:tracking-[-0.09em]  '>
                 コルマン
             </span>
 
             <div
-                className=' mt-sm h-[85vh]
+                className=' mt-sm h-[85vh] z-50
             md:h-[96vh] md:flex md:flex-col md:content-between md:justify-between
             lg:max-w-[2244px] lg:mx-auto 
             '>
 
 
                 <div className='z-50 max-w-64'>
-                    <span className='text-5xl text-left font-medium '>Let's work together</span>
+                    <span className='z-50 text-5xl text-left font-medium '>Let's work together</span>
                 </div>
 
                 <div className='flex flex-col justify-center mb-20 '>
@@ -38,12 +38,19 @@ export default function Footer({}) {
                         </span>
 
                         <div className='z-50 flex self-center'>
-                            <img className='pt-6' src='/x.svg'></img>
+                            <img className='pt-6 md:transform md:scale-[175%] md:px-8' src='/x.svg'></img>
+                            <div className='flex'>
                             <span
                                 className='
                         md:pl-3'>
                                 YOU
                             </span>
+                            <span
+                                className='
+                        hidden md:block md:pl-4'>
+                                !
+                            </span>
+                            </div>
                         </div>
                     </div>
 
