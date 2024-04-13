@@ -54,6 +54,7 @@ export default function Home() {
             imgDesktop: '/projects/enviopack/enviopack-dsk.jpg',
             imgMobile: '/projects/enviopack/enviopack-mb.jpg',
             imgBgColor: 'bg-[#2f3a4c]',
+            altText: 'enviopack website',
             url: 'http://www.google.com',
             techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
         },
@@ -62,6 +63,7 @@ export default function Home() {
           title: 'ULTIMATE COMICS',
           imgDesktop: '/projects/ultimate-comics/u-comics-dsk.jpg',
           imgMobile: '/projects/ultimate-comics/u-comics-mb.jpg',
+          altText: 'ultimate comics website',
           imgBgColor: 'bg-[#a81025]',
           url: 'http://www.google.com',
           techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
@@ -186,22 +188,6 @@ export default function Home() {
                 {/* HERO TEXT AND CIRCLE*/}
                 <HeroText />
 
-                {/*WORK TITLE OLD */}
-                {/* <div className='select-none w-full  text-center mt-20 flex flex-col relative justify-center items-center overflow-x-hidden overflow-y-hidden'>
-          <span className='text-[7.7rem] leading-tight font-noto font-black text-lk-red-50 text-nowrap	 items-center tracking-[-0.02em]  pb-3 
-          md:text-[447.22px]'>
-          入選作品
-          </span>
-          <h2 className='font-haetten flex flex-col text-8xl absolute 
-          md:text-[287.55px] md:pt-10'>
-            <span className='font-crimson text-[1.7rem] font-semibold  -mb-5 
-            md:text-[65px] md:mb-[-3.25rem] '>
-              selected
-              </span>
-            WORKS
-          </h2>
-
-        </div> */}
 
                 {/*WORK TITLE NEW*/}
                 <div className='select-none w-full  text-center mt-20 mb-14 flex flex-col relative justify-center items-center overflow-x-hidden overflow-y-hidden'>
@@ -302,7 +288,7 @@ export default function Home() {
                     <img
                         src='/ico.svg'
                         className='h-6 text-right flex ml-auto mb-[0.53rem] self-end 
-          md:h-16 md:mb-[1.3rem] '></img>
+          md:h-16 md:mb-[1.3rem] ' alt='*'/>
                 </div>
 
                 {/* JOBS */}

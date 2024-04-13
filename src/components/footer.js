@@ -38,7 +38,7 @@ export default function Footer({}) {
                         </span>
 
                         <div className='z-50 flex self-center'>
-                            <img className='pt-6 md:transform md:scale-[175%] md:px-8' src='/x.svg'></img>
+                            <img className='pt-6 md:transform md:scale-[175%] md:px-8' src='/x.svg' alt='x'/>
                             <div className='flex'>
                             <span
                                 className='

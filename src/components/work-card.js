@@ -41,6 +41,7 @@ export default function WorkCards({ projectInfo }) {
                                 className=' md:h-[439px] w-full max-w-[904px] object-contain	 hover:scale-105 transition-transform duration-200
                                 lg:h-full lg:max-h-[530px] '
                                 src={projectInfo.imgDesktop}
+                                alt={projectInfo.altText}
                                 loading="lazy"
                             />
                     </div>

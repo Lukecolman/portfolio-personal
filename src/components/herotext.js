@@ -35,62 +35,14 @@ export default function HeroText({}) {
         duration: 0.75,
         stagger: 0.5,
         scrollTrigger: {
-          // trigger: ".htStaggerText",
           start: "7% 17%",
           end: "center 20%",
-          // markers: true,
-          // scrub: true,
-
-
       }
 
     });
       
     }, [])
 
-
-    useGSAP(() => {
-
-
-
-    // gsap.from("#htYourFriendly", {
-    //     y:150,
-    //     repeat: -1,
-    //     yoyo: true,
-    //     duration: 2,
-    // }),
-
-    // gsap.from("#htNeighbourhood", {
-    //     y:150,
-    //     repeat: -1,
-    //     yoyo: true,
-    //     duration: 2,
-    // }),
-
-    //APROBADO DESCRIPTION R Y L
-    // gsap.from("#htDescriptionL", {
-    //     opacity: -30,
-    //     x:150,
-    //     repeat: -1,
-    //     yoyo: true,
-    //     duration: 2,
-    // }),
-    // gsap.from("#htDescriptionR", {
-    //     opacity: 0,
-    //     x:-150,
-    //     repeat: -1,
-    //     yoyo: true,
-    //     duration: 2,
-    // })
-    // gsap.from("#htDescriptionText", {
-    //     y:150,
-    //     repeat: -1,
-    //     yoyo: true,
-    //     duration: 2,
-    // })
-    
-    
-    },[])
 
 
     return(
