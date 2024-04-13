@@ -23,7 +23,7 @@ export default function HeroBanner({}) {
                 <div className='text-lk-white z-50 absolute lg:pt-6 flex flex-col-reverse lg:flex-row '>
 
                     {/* FRONTEND DEVELOPER */}
-                    <div className= ' md:block  leading-none -mt-3 md:text-[24px] lg:mt-0 lg:text-[36px] lg:mr-[4vw] font-semibold justify-center content-center '>
+                    <div className= ' md:block  leading-none -mt-3 md:text-[24px] lg:mt-0 lg:text-[33px] lg:mr-[4vw] font-semibold justify-center content-center '>
                         Frontend <br className="hidden lg:block"/>
                         Developer
                     </div>
@@ -48,7 +48,7 @@ export default function HeroBanner({}) {
                     </div>
 
                     {/* LOCATED IN ARGENTINA */}
-                    <div className='hidden text-[36px] leading-none ml-[4vw] font-semibold justify-center content-center lg:block'>
+                    <div className='hidden text-[33px] leading-none ml-[4vw] font-semibold justify-center content-center lg:block'>
                         Located in <br/>
                         Argentina
                     </div>
