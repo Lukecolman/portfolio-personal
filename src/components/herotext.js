@@ -96,7 +96,7 @@ export default function HeroText({}) {
     return(
         <div>
 
-        <div  className='text-center mt-[10px] md:mt-[75px] lg:mt-[200px] bg-green-300'>
+        <div  className='text-center mt-[10px] md:mt-[75px] lg:mt-[200px]'>
             <div id='htYourFriendly' className='text-4xl tracking-[-0.04em] -mb-1 md:text-[72px] 
             md:leading-[5.5rem] 
             lg:text-[106px] lg:leading-tight lg:mb-0 htStaggerText'>

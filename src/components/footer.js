@@ -13,8 +13,8 @@ export default function Footer({}) {
             </span>
 
             <div
-                className=' mt-sm h-[85vh] z-50
-            md:h-[96vh] md:flex md:flex-col md:content-between md:justify-between
+                className=' mt-sm  z-50
+            md:min-h-[96vh] md:flex md:flex-col md:content-between md:justify-between
             lg:max-w-[2244px] lg:mx-auto 
             '>
 

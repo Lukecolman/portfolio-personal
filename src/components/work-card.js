@@ -8,20 +8,20 @@ export default function WorkCards({ projectInfo }) {
                 {/* TEXT-BOX */}
                 <div
                     className='z-50 pb-3  flex flex-col justify-between w-full gap-4 text-wrap 
-                    md:flex-row md:pb-7 lg:text-left bg-orange-400 md:bg-blue-400 lg:bg-violet-400'>
+                    md:flex-row md:pb-7 lg:text-left'>
 
                     {/* TITLE OF THE PROJECT */}
                     <h3
                         className='font-haetten text-7xl pb-2 text-start leading-[0.7]
-                        md:text-start  md:leading-[0.8] md:-mb-[7px] md:text-[7rem] lg:text-[11rem] lg:w-full lg:mt-auto bg-yellow-400 '>
+                        md:text-start  md:leading-[0.8] md:-mb-[7px] md:text-[7rem] lg:text-[11rem] lg:w-full lg:mt-auto'>
                         {projectInfo.title}
                     </h3>
 
                     {/* TAG TEXT */}
-                    <div className='  h-full  flex self-start md:justify-end md:self-end bg-yellow-400'>
+                    <div className='  h-full  flex self-start md:justify-end md:self-end'>
                         {projectInfo.tag.map((tag, index) => (
                             <span
-                                className='font-semibold md:w-max self-end text-lg leading-[0.8]  md:text-[1.2rem] lg:text-[1.5rem] bg-green-400'
+                                className='font-semibold md:w-max self-end text-lg leading-[0.8]  md:text-[1.2rem] lg:text-[1.5rem]'
                                 key={index}>
                                 {' '}
                                 {tag}{' '}
