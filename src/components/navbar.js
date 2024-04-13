@@ -2,9 +2,9 @@ export default function Navbar({}) {
 
 
   return (
-    <nav className='absolute z-30 backdrop-blur-xl shadow-md w-full py-4 px-sm lg:px-md '>
+    <nav className='absolute z-30 backdrop-blur-xl shadow-md w-full py-2 md:py-4 px-sm lg:px-md '>
       <div className='text-sm flex justify-between items-center lg:max-w-[2244px] lg:mx-auto'>
-        <div className="font-black tracking-wider text-xl">
+        <div className="font-black tracking-wider text-lg md:text-xl">
           luke 
         </div>
         

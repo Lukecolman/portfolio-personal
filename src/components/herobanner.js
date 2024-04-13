@@ -1,19 +1,19 @@
 export default function HeroBanner({}) {
     return (
-        <div className=' text-center h-[30rem] w-full overflow-x-hidden md:overflow-x-visible lg:h-[620px]'>
+        <div className=' text-center h-[18rem] md:h-[30rem] w-full overflow-x-visible lg:h-[620px]'>
             <div className='select-none flex flex-col relative justify-center items-center lg:-top-14'>
                 <div
                     className='font-noto font-black text-lk-red-600 text-nowrap	flex flex-col items-center tracking-[-0.02em] 
                     lg:tracking-[-0.8rem]
                     '>
                     <div
-                        className='text-[7.7rem] leading-tight md:text-[280px] md:leading-none
+                        className='text-[160px] leading-none md:text-[280px] md:leading-none
                         lg:text-[480px] 
                         '>
                         ルウク
                     </div>
                     <div
-                        className='text-[7.5rem] leading-[1.3] pb-2 md:text-[280px] md:leading-none
+                        className='text-[160px] leading-[1.3] -mt-8 pb-2 md:text-[280px] md:leading-none
                         lg:text-[480px]  lg:-mt-12
                         '>
                         コルマン
