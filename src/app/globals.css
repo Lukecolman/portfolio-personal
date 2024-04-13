@@ -106,7 +106,7 @@ body {
   color: blue;
 } */
 .under-line-css:hover:after{
-  height: 6px;
+  height: 0.3em;
 }
 
 /* ANIMATION NAVBAR NAME */
