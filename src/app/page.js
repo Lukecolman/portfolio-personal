@@ -57,20 +57,15 @@ export default function Home() {
             url: 'http://www.google.com',
             techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
         },
-        // {
-        //   tag: ['WEB DEVELOPMENT'],
-        //   title: 'COMIC STORE',
-        //   img: '/projects/image-294.jpg',
-        //   url: 'http://www.google.com',
-        //   techIcons: ['/tech-icons/react.svg', '/tech-icons/nextjs.svg', '/tech-icons/tailwind.svg'],
-        // },
-        // {
-        //   tag: ['WEB DEVELOPMENT'],
-        //   title: 'MUJERES AL VUELO',
-        //   img: '/projects/image-294.jpg',
-        //   url: 'http://www.google.com',
-        //   techIcons: ['/tech-icons/html5.svg', '/tech-icons/css3.svg', '/tech-icons/tailwind.svg'],
-        // },
+        {
+          tag: ['WEB DEVELOPMENT / WEB DESIGN'],
+          title: 'ULTIMATE COMICS',
+          imgDesktop: '/projects/desktop.jpg',
+          imgMobile: '/projects/mobile.jpg',
+          imgBgColor: 'bg-[#E6E8E7]',
+          url: 'http://www.google.com',
+          techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
+      },
     ];
 
     // ANIMACIONES EN GSAP
