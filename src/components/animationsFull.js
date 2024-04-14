@@ -128,24 +128,6 @@ workLinks.forEach((link, index, value) => {
           repeat: -1,
         })
 
-
-    // timeline.from("#otherElement", {
-    //   opacity: 0,
-    //   x: -175,
-    //   duration: 2,
-    // }, 0);
-    
-    // gsap.from("#anotherElement", {
-    //   opacity: 0,
-    //   y: "100%",
-    //   duration: 0.75,
-    //   stagger: 0.5,
-    //   scrollTrigger: {
-    //     start: "7% 17%",
-    //     end: "center 20%",
-    //   }
-    // });
-
   }, []);
 
   return (

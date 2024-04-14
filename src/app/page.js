@@ -3,20 +3,14 @@ import { useEffect } from 'react';
 
 // TEST
 import { useRef } from 'react';
-
-import Image from 'next/image';
-import Link from 'next/link';
-
 import Navbar from '@/components/navbar';
 import WorkCards from '@/components/work-card';
-// import TechStack from '@/components/techStack';
 import TechMarquee from '@/components/techMarquee';
 import Jobs from '@/components/jobs';
 import Footer from '@/components/footer';
 import HeroBanner from '@/components/herobanner';
 import HeroText from '@/components/herotext';
-import AnimationTest from '@/components/animationsFull';
-import PreLoader from '@/components/Loader/preLoader';
+// import PreLoader from '@/components/Loader/preLoader';
 
 // ANIMACIONES
 import { useScroll, useTransform, motion } from 'framer-motion';
@@ -73,14 +67,7 @@ export default function Home() {
     // ANIMACIONES EN GSAP
 
     const timeline = gsap.timeline(
-        //OBJETO
-        {
-            markers: true,
-
-            repeat: -1,
-            repeatDelay: 1,
-            yoyo: true,
-        }
+        {}
     );
 
     useGSAP(() => {
@@ -89,7 +76,6 @@ export default function Home() {
             ease: 'power4.out',
             delay: 0.5,
             duration: 1.5,
-            // skewY: 21,
             opacity: 0,
             stagger: {
                 amount: 0.2,
@@ -97,13 +83,10 @@ export default function Home() {
                 grid: [2, 1],
                 from: 'center',
             },
-            // yoyo: true,
-            // repeat: -1,
             scrollTrigger: {
                 trigger: '.japanese-letter2',
                 start: 'top 80%',
                 end: '+=100',
-                markers: true,
             },
         });
 
@@ -121,7 +104,6 @@ export default function Home() {
                 trigger: '.japanese-letter',
                 start: 'bottom 90%',
                 end: '+=100',
-                markers: true,
             },
         });
 
@@ -142,38 +124,9 @@ export default function Home() {
                 trigger: '.japanese-letter3',
                 start: 'top 95%',
                 end: '+=100',
-                markers: true,
             },
         });
 
-        // gsap.from("#selected2", {
-        //     y: 100,
-        //     ease: "power4.out",
-        //     delay: 1,
-        //     // skewY: 21,
-        //     opacity: 0,
-        //     stagger: {
-        //     amount: 0.2,
-        //     axis: "y",
-        //     grid: [2, 1],
-        //     from: "center",
-        //  },
-        //   yoyo: true,
-        //   repeat: -1,
-        // })
-
-        // gsap.from("#works2", {
-        //     y: 300,
-        //     ease: "power4.out",
-        //     delay: 1,
-        //     // skewY: 21,
-        //     opacity: 0,
-        //     stagger: {
-        //         amount: 0.9, },
-
-        //   yoyo: true,
-        //   repeat: -1,
-        // })
     }, []);
 
     return (
@@ -258,8 +211,6 @@ export default function Home() {
                     <TechMarquee className='mt-4' />
                 </div>
 
-                {/* POR ALGUNA RAZON DE ESTA FORMA NO ANDA
-        <TechStack/> */}
 
                 {/* EXPERIENCE HISTORY TITLE*/}
                 <div

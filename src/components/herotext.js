@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap"
@@ -8,13 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function HeroText({}) {
 
-    const timeline = gsap.timeline(
-        //OBJETO
-            {
-            //     repeat: -1, 
-            // repeatDelay: 1, 
-            // yoyo: true
-        });
+    const timeline = gsap.timeline({});
 
     useGSAP(() => {
     timeline.from("#htDescriptionL", {
@@ -30,8 +23,6 @@ export default function HeroText({}) {
     gsap.from(".htStaggerText", {
         opacity: 0,
         y:"100%",
-        // repeat: -1,
-        // yoyo: true,
         duration: 0.75,
         stagger: 0.5,
         scrollTrigger: {
@@ -92,14 +83,14 @@ export default function HeroText({}) {
             </textPath>
           </text>
         </svg>
-        <Image
+        <img
             id='arrow'
             src="/arrow.svg"
             alt="arrow"
             className="absolute w-[5%] max-w-[20px]  md:max-w-[30px] lg:max-w-[35px]"
             width={25}
             height={2}
-            priority
+            loading="lazy"
           />
         </div>
         </div>

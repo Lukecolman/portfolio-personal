@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function WorkCards({ projectInfo }) {
     return (
         <a href={projectInfo.url} target='_blank' rel='noopener noreferrer ' className='w-full'>
@@ -52,6 +50,7 @@ export default function WorkCards({ projectInfo }) {
                             className='h-[439px] w-full object-contain hover:scale-105 transition-transform duration-200
                             lg:h-full lg:max-h-[530px]  lg:max-w-[293px]'
                             src={projectInfo.imgMobile}
+                            alt={projectInfo.altText}
                             loading="lazy"
                         />
                     </div>

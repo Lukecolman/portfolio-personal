@@ -23,17 +23,12 @@ const TechMarquee = () => {
     useGSAP(() => {
         gsap.from("#redBanner", {
             x:"100%",
-            // repeat: -1,
-            // yoyo: true,
             duration: 2,
             ease:"expo",
             scrollTrigger: {
               trigger: "#redBanner",
               start: "top 90%",
               end: "+=100",
-              markers: true,
-    
-    
           }
     
         });
