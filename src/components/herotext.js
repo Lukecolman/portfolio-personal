@@ -77,9 +77,9 @@ export default function HeroText({}) {
                 a 37,37 0 1,1 74,0
                 a 37,37 0 1,1 -74,0"/>
           </defs>
-          <text  className='text-[14.7px]' >
+          <text  className='text-[14.7px] tracking-[.19em]' >
             <textPath href="#circle">
-             MADAFAKA IM LUKE HELLO
+             YOUR  WORK  GOES  HERE
             </textPath>
           </text>
         </svg>

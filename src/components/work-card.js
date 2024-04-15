@@ -1,6 +1,6 @@
 export default function WorkCards({ projectInfo }) {
     return (
-        <a href={projectInfo.url} target='_blank' rel='noopener noreferrer ' className='w-full'>
+        <a href={projectInfo.url} target='_blank' rel='noopener noreferrer ' className='w-full mt-8'>
             <div className=' w-full  text-lk-red-600 text-center   '>
 
                 {/* TEXT-BOX */}

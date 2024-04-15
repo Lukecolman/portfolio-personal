@@ -49,7 +49,7 @@ export default function Home() {
             imgMobile: '/projects/enviopack/enviopack-mb.jpg',
             imgBgColor: 'bg-[#2f3a4c]',
             altText: 'enviopack website',
-            url: 'http://www.google.com',
+            url: 'https://statuesque-stroopwafel-7abdd7.netlify.app/',
             techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
         },
         {
@@ -59,7 +59,7 @@ export default function Home() {
           imgMobile: '/projects/ultimate-comics/u-comics-mb.jpg',
           altText: 'ultimate comics website',
           imgBgColor: 'bg-[#a81025]',
-          url: 'http://www.google.com',
+          url: 'https://lukecolman.github.io/comicstore-colman/',
           techIcons: ['/tech-icons/sass.svg', '/tech-icons/tailwind.svg', '/tech-icons/react.svg'],
       },
     ];
@@ -137,7 +137,7 @@ export default function Home() {
             <HeroBanner />
 
             {/* WHITE CONTAINER */}
-            <div className='bg-lk-white w-full text-lk-red-600 rounded-t-full pt-24 z-30 overflow-x-hidden flex flex-col items-center lg:content-center'>
+            <div className='bg-lk-white w-full text-lk-red-600 rounded-t-full pt-24 z-30 overflow-hidden flex flex-col items-center lg:content-center'>
                 {/* HERO TEXT AND CIRCLE*/}
                 <HeroText />
 
@@ -248,14 +248,28 @@ export default function Home() {
          md:mb-44 
         lg:px-md lg:max-w-[2244px]'>
                     <Jobs />
+                    {/* DOWNLOAD CV */}
+
+                    <div className='flex flex-col md:flex-row justify-center text-center font-extrabold text-2xl md:text-3xl md:mt-3 ' >
 
                     <a
-                        href='http://www.google.com'
+                        href='https://drive.google.com/file/d/1Sb7xRoapnLnElM2KtkqxX2LGzXgRUkJM/view?usp=sharing'
                         target='_blank'
-                        className='under-line-css under-line-red >text-center font-extrabold text-2xl w-fit self-center
-          md:mt-3 md:text-3xl'>
+                        className='under-line-css under-line-red w-fit self-center mx-3
+                        '>
                         DOWNLOAD CV
                     </a>
+                    <span className='rotate-[77deg] md:rotate-0'>
+                        /
+                    </span>
+                    <a
+                        href='https://drive.google.com/file/d/1yEk89ipJOD4BcKaBXfVtWHaUGYS4Xg3D/view?usp=sharing'
+                        target='_blank'
+                        className=' under-line-css under-line-red w-fit self-center mx-3
+                        '>
+                        DESCARGAR CV <span className='text-sm md:text-base'>(ESP)</span>
+                    </a>
+              </div>
                 </div>
             </div>
 

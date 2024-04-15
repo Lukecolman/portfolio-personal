@@ -8,13 +8,30 @@ export default function Navbar({}) {
           luke 
         </div>
         
-        <div className="flex gap-32">
+        <div className="flex gap-12 items-center">
           {/* IMPLEMENTAR MAS ADELANTE CON UN BACKEND */}
           {/* <div className="hidden md:block font-light mx-auto">
             Last visit from Chaco, Argentina
           </div> */}
           <a className="hidden md:block font-light under-line-css" href="mailto:lucas.a.colman@gmail.com">lucas.a.colman@gmail.com</a>
           <a className="block md:hidden font-light under-line-css" href="mailto:lucas.a.colman@gmail.com">email</a>
+
+          {/* SOCIAL MEDIA */}
+          <div className="flex items-center gap-3">
+            <a href="">
+              <img 
+                className="h-7" 
+                src="/github-logo.svg" 
+                alt="github logo"/>
+                </a>
+            <a href="">
+              <img 
+                className="h-8" 
+                src="/linkedin-logo.svg" 
+                alt="linkedin logo"/>
+                </a>
+          </div>
+
         </div>
       </div>
     </nav>
