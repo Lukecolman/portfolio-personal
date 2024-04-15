@@ -18,15 +18,21 @@ export default function Navbar({}) {
 
           {/* SOCIAL MEDIA */}
           <div className="flex items-center gap-3">
-            <a href="">
+            <a 
+              href="https://github.com/Lukecolman"
+              target='_blank'
+              >
               <img 
-                className="h-7" 
+                className="h-6 md:h-7" 
                 src="/github-logo.svg" 
                 alt="github logo"/>
                 </a>
-            <a href="">
+            <a 
+              href="https://www.linkedin.com/in/lukecolman/"
+              target='_blank'
+              >
               <img 
-                className="h-8" 
+                className="h-[27px] md:h-8" 
                 src="/linkedin-logo.svg" 
                 alt="linkedin logo"/>
                 </a>
