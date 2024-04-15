@@ -10,8 +10,8 @@ export default function WorkCards({ projectInfo }) {
 
                     {/* TITLE OF THE PROJECT */}
                     <h3
-                        className='font-haetten text-7xl pb-2 text-start leading-[0.7]
-                        md:text-start  md:leading-[0.8] md:-mb-[7px] md:text-[7rem] lg:text-[11rem] lg:w-full lg:mt-auto'>
+                        className='font-haetten text-7xl pb-2 text-start leading-[0.8]
+                        md:text-start md:-mb-[7px] md:text-[7rem] lg:text-[11rem] lg:w-full lg:mt-auto'>
                         {projectInfo.title}
                     </h3>
 

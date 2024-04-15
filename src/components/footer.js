@@ -7,8 +7,8 @@ export default function Footer({}) {
         lg:px-md lg:pb-[1rem] lg:items-center z-0 
          '>
             <span
-                className='-z-50 font-noto text-[#F74746] font-black text-[190px] absolute  left-1/2 transform -translate-x-1/2 [writing-mode:vertical-lr] text-nowrap leading-[10px] content-center
-                md:[writing-mode:horizontal-tb] md:text-[550px] md:text-center md:overflow-visible  md:top-0 md:bottom-0 md:mx-auto md:-translate-y-8  md:tracking-[-0.09em]  '>
+                className='-z-50 font-noto text-[#F74746] font-black text-[190px] absolute  left-1/2 transform -translate-x-1/2 -translate-y-8 [writing-mode:vertical-lr] text-nowrap leading-[10px] content-center
+                md:[writing-mode:horizontal-tb] md:text-[550px] md:text-center md:overflow-visible  md:top-0 md:bottom-0 md:mx-auto   md:tracking-[-0.09em]  '>
                 コルマン
             </span>
 
@@ -20,12 +20,12 @@ export default function Footer({}) {
 
 
                 <div className='z-50 max-w-64'>
-                    <span className='z-50 text-5xl text-left font-medium '>Let&apos;s work together</span>
+                    <span className='z-50 text-4xl md:text-5xl text-left font-medium '>Let&apos;s work together</span>
                 </div>
 
-                <div className='flex flex-col justify-center mb-20 '>
+                <div className='flex flex-col justify-center mb-20'>
                     <div
-                        className=' z-50 flex flex-col w-full font-haetten text-[15rem] leading-none text-center 
+                        className=' z-50 flex flex-col w-full font-haetten text-[12rem] leading-none text-center 
                 md:flex-row md:justify-center  
                 lg:text-[19rem]
                 xl:text-[25rem]
@@ -56,7 +56,7 @@ export default function Footer({}) {
 
                     {/* MAIL */}
                         <a
-                            className='z-50 under-line-css text-center font-extrabold text-2xl self-center w-fit justify-center -mt-6'
+                            className='z-50 under-line-css text-center font-extrabold text-xl md:text-2xl self-center w-fit justify-center md:-mt-6'
                             href='mailto:lucas.a.colman@gmail.com'>
                             lucas.a.colman@gmail.com
                         </a>
