@@ -103,7 +103,7 @@ export default function Footer({}) {
                         </ul>
 
                         {/* COPYRIGHT */}
-                        <span className='font-medium md:ml-auto md:text-sm'>© COPYRIGHT 2024 LUKE COLMAN</span>
+                        <span className='font-medium md:ml-auto md:text-sm'>&copy; COPYRIGHT 2024 LUKE COLMAN</span>
                     </div>
                 </div>
             </div>

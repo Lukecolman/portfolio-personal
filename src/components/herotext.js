@@ -20,18 +20,6 @@ export default function HeroText({}) {
         x:-175,
         duration: 2,
     },  0);
-    // gsap.from(".htStaggerText", {
-    //     opacity: 0,
-    //     y:"100%",
-    //     duration: 0.75,
-    //     stagger: 0.5,
-    //     scrollTrigger: {
-    //       start: "7% 17%",
-    //       end: "center 20%",
-    //   }
-
-    // });
-
 
 //responsive
 let mm = gsap.matchMedia();
