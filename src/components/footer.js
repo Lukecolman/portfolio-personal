@@ -20,7 +20,7 @@ export default function Footer({}) {
 
 
                 <div className='z-50 max-w-64'>
-                    <span className='z-50 text-5xl text-left font-medium '>Let's work together</span>
+                    <span className='z-50 text-5xl text-left font-medium '>Let&apos;s work together</span>
                 </div>
 
                 <div className='flex flex-col justify-center mb-20 '>
