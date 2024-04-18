@@ -8,7 +8,7 @@ export default function Jobs ({}) {
           },
           {
             role: 'UI Developer / Designer',
-            company: 'Ciudad Autonoma de Buenos Aires',
+            company: 'Ciudad Autónoma de Buenos Aires',
             period: '2022 - 2024',
             type: 'Remote',
           },
