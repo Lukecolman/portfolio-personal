@@ -31,7 +31,7 @@ export const metadata = {
   title: "Luke Colman • Frontend Developer",
   description: "Developer and Designer in Argentina",
   openGraph: {
-    images: '/og-image.png',
+    images: 'https://i.pinimg.com/736x/74/0c/ba/740cba360d5925d14acf4e1b2ce5bfa1.jpg',
   },
 
 };
