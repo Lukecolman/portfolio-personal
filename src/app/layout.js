@@ -30,8 +30,9 @@ const crimson = Crimson_Text({
 export const metadata = {
   title: "Luke Colman • Frontend Developer",
   description: "Developer and Designer in Argentina",
-  ogImage: "images/share-image.jpg",
-  twitterImage: "images/share-image.jpg",
+  openGraph: {
+    images: '/images/share-image.jpg',
+  },
   
 };
 
