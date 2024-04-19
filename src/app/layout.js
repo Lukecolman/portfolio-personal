@@ -31,9 +31,9 @@ export const metadata = {
   title: "Luke Colman • Frontend Developer",
   description: "Developer and Designer in Argentina",
   openGraph: {
-    images: '/images/share-image.jpg',
+    images: '/og-image.png',
   },
-  
+
 };
 
 export default function RootLayout({ children }) {
