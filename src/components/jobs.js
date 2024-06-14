@@ -1,9 +1,15 @@
 export default function Jobs ({}) {
     const JobItem = [
-        {
+          {
+            role: 'Frontend Developer',
+            company: 'Brandgestic - Spain',
+            period: '2024 - Present',
+            type: 'Remote',
+          },
+          {
             role: 'Frontend Developer',
             company: 'VIXEL',
-            period: '2023 - Present',
+            period: '2023 - 2024',
             type: 'Remote',
           },
           {
