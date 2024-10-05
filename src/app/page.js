@@ -1,18 +1,18 @@
-// CHORE LIST
-// [x] REFACTOR
-// [x] ADD WORKS AND CURRICULUM TO CONSTANTS
-// [x] FIX SCROLL BAR PROBLEM WITH MOTION DIV FOOTER
-// REDESIGN BASED IN DANDADAN INTRO
-// [x] REMOVE OR MODIFY SCROLLBAR
-// [x] ADD SOCIAL MEDIA AND MAIL TO CONSTANTS
-// [] CODE AND ADD PRELOADER
-// [] ADD NEW PAGES
-// - [] FULL LIST OF WORKS
-// - [] INDIVIDUAL WORK
-// - [] PERSONAL PROJECTS
-// - [] ABOUT ME
-// - [] PHOTOGRAPHY(?MAYBE)
-// [] ADD PAGE TRANSITION
+// -CHORE LIST
+// - [x] REFACTOR
+// - [x] ADD WORKS AND CURRICULUM TO CONSTANTS
+// - [x] FIX SCROLL BAR PROBLEM WITH MOTION DIV FOOTER
+// -REDESIGN BASED IN DANDADAN INTRO
+// - [x] REMOVE OR MODIFY SCROLLBAR
+// - [x] ADD SOCIAL MEDIA AND MAIL TO CONSTANTS
+// - [] CODE AND ADD PRELOADER
+// - [] ADD NEW PAGES
+// -- [] FULL LIST OF WORKS
+// -- [] INDIVIDUAL WORK
+// -- [] PERSONAL PROJECTS
+// -- [] ABOUT ME
+// -- [] PHOTOGRAPHY(?MAYBE)
+// - [] ADD PAGE TRANSITION
 
 "use client";
 import { useEffect, useRef } from "react";
@@ -70,7 +70,7 @@ export default function Home() {
     offset: ["start end", "end start"],
   });
 
-  const height = useTransform(scrollYProgress, [0, 0.88], ["1800px", "1px"]);
+  const height = useTransform(scrollYProgress, [0, 0.88], ["2800px", "1px"]);
 
   // Ejecuta las animaciones de GSAP
   useGSAP(() => {

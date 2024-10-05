@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const initGSAPAnimations = () => {
   gsap.from(".alt-text", {
-    y: 200, // El punto inicial de la animación (comenzando fuera de la vista)
+    y: 250, // El punto inicial de la animación (comenzando fuera de la vista)
     // opacity: 0, // El valor inicial de la opacidad
     // duration: 1.5, // Duración de la animación (aunque `scrub` la controla más finamente)
     // ease: "power4.out",
