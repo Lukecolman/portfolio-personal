@@ -5,6 +5,9 @@
 // -REDESIGN BASED IN DANDADAN INTRO
 // - [x] REMOVE OR MODIFY SCROLLBAR
 // - [x] ADD SOCIAL MEDIA AND MAIL TO CONSTANTS
+// - [] !!! FIX SCROLLBAR ON MOBILE
+// - [] !!! FIX FOOTER ANIMATION ON MOBILE
+
 // - [] CODE AND ADD PRELOADER
 // - [] ADD NEW PAGES
 // -- [] FULL LIST OF WORKS
@@ -70,7 +73,7 @@ export default function Home() {
     offset: ["start end", "end start"],
   });
 
-  const height = useTransform(scrollYProgress, [0, 0.88], ["2800px", "1px"]);
+  const height = useTransform(scrollYProgress, [0, 0.88], ["1800px", "0px"]);
 
   // Ejecuta las animaciones de GSAP
   useGSAP(() => {
@@ -85,7 +88,7 @@ export default function Home() {
       <HeroBanner />
 
       {/* WHITE CONTAINER */}
-      <section className="bg-lk-white w-full text-lk-red-600 rounded-t-full pt-24 z-30 overflow-hidden flex flex-col items-center lg:content-center">
+      <section className="bg-lk-white w-full text-lk-red-600 rounded-t-full pt-24 z-30 overflow-hidden flex flex-col items-center -mb-[2px] lg:content-center">
         {/* HERO TEXT AND CIRCLE*/}
         <HeroText />
 
@@ -100,10 +103,10 @@ export default function Home() {
       </section>
 
       {/* FOOTER  */}
-      <div className="relative w-full overflow-x-hidden">
+      <div className="relative w-full overflow-x-hidden bg-lk-white">
         <motion.div
           style={{ height }}
-          className="circleContainer absolute top-0 z-[500] !bg-transparent"
+          className="circleContainer absolute top-0  z-[500] !bg-transparent hidden md:block"
         >
           <div className="circle"></div>
         </motion.div>

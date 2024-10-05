@@ -11,7 +11,7 @@ export default function Footer({}) {
   return (
     <div
       className="bg-lk-red-600  text-white relative px-sm pt-sm pb-sm  w-full overflow-hidden 
-        lg:px-md lg:pb-[1rem] lg:items-center z-0 
+        lg:px-md lg:pb-[1rem] lg:items-center z-0 h-auto
          "
     >
       <span
@@ -27,8 +27,14 @@ export default function Footer({}) {
             lg:max-w-[2244px] lg:mx-auto 
             "
       >
-        <div className="z-50 max-w-64 alt-text">
-          <span className="z-50 text-4xl md:text-5xl text-left font-medium ">
+        <div className="z-50 max-w-64 alt-text hidden md:block">
+          <span className="z-50   md:text-5xl text-left font-medium ">
+            Let&apos;s work together
+          </span>
+        </div>
+
+        <div className="z-50 max-w-64 block md:hidden">
+          <span className="z-50 text-4xl   text-left font-medium ">
             Let&apos;s work together
           </span>
         </div>
