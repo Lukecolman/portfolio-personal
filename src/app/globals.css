@@ -79,3 +79,10 @@ body {
 .under-line-css:hover:after {
   height: 0.2em;
 }
+
+/* SCROLLBAR */
+.os-scrollbar .os-scrollbar-handle {
+  width: 7px !important;
+  background-color: rgb(247 71 70) !important;
+  border-radius: 8px;
+}

@@ -1,9 +1,9 @@
 // CHORE LIST
 // [x] REFACTOR
 // [x] ADD WORKS AND CURRICULUM TO CONSTANTS
-// [] FIX SCROLL BAR PROBLEM WITH MOTION DIV FOOTER
+// [x] FIX SCROLL BAR PROBLEM WITH MOTION DIV FOOTER
 // REDESIGN BASED IN DANDADAN INTRO
-// [] REMOVE OR MODIFY SCROLLBAR
+// [x] REMOVE OR MODIFY SCROLLBAR
 // [x] ADD SOCIAL MEDIA AND MAIL TO CONSTANTS
 // [] CODE AND ADD PRELOADER
 // [] ADD NEW PAGES
@@ -26,6 +26,8 @@ import {
   Footer,
 } from "@/components/index";
 
+import { useOverlayScrollbars } from "../hooks/useOverlayScrollbars"; // Importar el hook
+
 // ANIMACIONES
 import { initGSAPAnimations } from "@/components/index";
 import { useScroll, useTransform, motion } from "framer-motion";
@@ -35,7 +37,10 @@ import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+  useOverlayScrollbars();
+
   // SMOOTH SCROLL FOR THE WEB
+
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
