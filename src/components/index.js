@@ -12,7 +12,7 @@ import Footer from "@/components/footer/footer";
 import { initGSAPAnimations } from "@/app/animation";
 
 // CONSTANTS
-import { Projects } from "@/constants";
+import { Projects, JobItem, Curriculums, SocialMedia } from "@/constants";
 
 // COMPONENTS
 import WorkCards from "@/components/work-card";
@@ -39,4 +39,7 @@ export {
 
   // CONSTANTS
   Projects,
+  JobItem,
+  Curriculums,
+  SocialMedia,
 };

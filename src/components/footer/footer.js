@@ -1,6 +1,13 @@
+import { useGSAP } from "@gsap/react";
 import GsapMagnetic from "@/components/shared/gsapMagnetic";
+import { SocialMedia } from "@/components/index";
+import { initGSAPAnimations } from "./animations";
 
 export default function Footer({}) {
+  // Ejecuta las animaciones de GSAP
+  useGSAP(() => {
+    initGSAPAnimations();
+  }, []);
   return (
     <div
       className="bg-lk-red-600  text-white relative px-sm pt-sm pb-sm  w-full overflow-hidden 
@@ -20,7 +27,7 @@ export default function Footer({}) {
             lg:max-w-[2244px] lg:mx-auto 
             "
       >
-        <div className="z-50 max-w-64">
+        <div className="z-50 max-w-64 alt-text">
           <span className="z-50 text-4xl md:text-5xl text-left font-medium ">
             Let&apos;s work together
           </span>
@@ -68,17 +75,13 @@ export default function Footer({}) {
           {/* MAIL */}
           <a
             className="z-50 under-line-css text-center font-extrabold text-xl md:text-2xl self-center w-fit justify-center lg:-mt-2"
-            href="mailto:lucas.a.colman@gmail.com"
+            href={`mailto:${SocialMedia.mail.url}`}
           >
-            lucas.a.colman@gmail.com
+            {SocialMedia.mail.url}
           </a>
         </div>
 
-        <div
-          className="z-50 text-center flex flex-col gap-7 mt-12 md:mt-2   align-bottom
-                 
-                "
-        >
+        <div className="z-50 text-center flex flex-col gap-7 mt-12 md:mt-2 align-bottom">
           {/* SOCIAL MEDIA Y COPYRIGHT */}
           <div className="z-50 flex flex-col gap-7 md:mt-10 md:flex-row  md:justify-between ">
             {/* SOCIAL MEDIA */}
@@ -86,33 +89,33 @@ export default function Footer({}) {
               <GsapMagnetic>
                 <li>
                   <a
-                    href="https://www.github.com/Lukecolman"
+                    href={SocialMedia.github.url}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    GITHUB
+                    {SocialMedia.github.text}
                   </a>
                 </li>
               </GsapMagnetic>
               <GsapMagnetic>
                 <li>
                   <a
-                    href="https://www.behance.net/lukecolman"
+                    href={SocialMedia.linkedin.url}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    BEHANCE
+                    {SocialMedia.linkedin.text}
                   </a>
                 </li>
               </GsapMagnetic>
               <GsapMagnetic>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/lukecolman/"
+                    href={SocialMedia.behance.url}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    LINKEDIN
+                    {SocialMedia.behance.text}
                   </a>
                 </li>
               </GsapMagnetic>
@@ -120,7 +123,7 @@ export default function Footer({}) {
 
             {/* COPYRIGHT */}
             <span className="font-medium md:ml-auto md:text-sm">
-              &copy; COPYRIGHT 2024 LUKE COLMAN
+              &copy; {SocialMedia.coyright}
             </span>
           </div>
         </div>

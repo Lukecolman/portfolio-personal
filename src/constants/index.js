@@ -83,4 +83,27 @@ export const Curriculums = [
   },
 ];
 
-//SOCIAL MEDIA
+//SOCIAL MEDIA AND MAIL
+export const SocialMedia = {
+  mail: {
+    text: "email",
+    url: "lucas.a.colman@gmail.com",
+    icon: "",
+  },
+  github: {
+    text: "GITHUB",
+    url: "https://www.github.com/Lukecolman",
+    icon: "/github-logo.svg",
+  },
+  linkedin: {
+    text: "LINKEDIN",
+    url: "https://www.linkedin.com/in/lukecolman/",
+    icon: "/linkedin-logo.svg",
+  },
+  behance: {
+    text: "BEHANCE",
+    url: "https://www.behance.net/lukecolman",
+    icon: "",
+  },
+  coyright: "COPYRIGHT 2024 LUKE COLMAN",
+};

@@ -1,3 +1,19 @@
+// CHORE LIST
+// [x] REFACTOR
+// [x] ADD WORKS AND CURRICULUM TO CONSTANTS
+// [] FIX SCROLL BAR PROBLEM WITH MOTION DIV FOOTER
+// REDESIGN BASED IN DANDADAN INTRO
+// [] REMOVE OR MODIFY SCROLLBAR
+// [x] ADD SOCIAL MEDIA AND MAIL TO CONSTANTS
+// [] CODE AND ADD PRELOADER
+// [] ADD NEW PAGES
+// - [] FULL LIST OF WORKS
+// - [] INDIVIDUAL WORK
+// - [] PERSONAL PROJECTS
+// - [] ABOUT ME
+// - [] PHOTOGRAPHY(?MAYBE)
+// [] ADD PAGE TRANSITION
+
 "use client";
 import { useEffect, useRef } from "react";
 import {
@@ -23,18 +39,33 @@ export default function Home() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      const locomotiveScroll = new LocomotiveScroll({
+        lenisOptions: {
+          wrapper: window,
+          content: document.documentElement,
+          lerp: 0.1,
+          duration: 1,
+          orientation: "vertical",
+          gestureOrientation: "vertical",
+          smoothWheel: true,
+          smoothTouch: false,
+          wheelMultiplier: 1.2,
+          touchMultiplier: 2,
+          normalizeWheel: true,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+        },
+      });
     })();
   }, []);
 
-  // FOOTER BENDING
+  // // FOOTER BENDING
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start end", "end start"],
   });
 
-  const height = useTransform(scrollYProgress, [0, 0.88], ["1800px", "0px"]);
+  const height = useTransform(scrollYProgress, [0, 0.88], ["1800px", "1px"]);
 
   // Ejecuta las animaciones de GSAP
   useGSAP(() => {
@@ -64,10 +95,16 @@ export default function Home() {
       </section>
 
       {/* FOOTER  */}
-      <motion.div style={{ height }} className="circleContainer">
-        <div className="circle"></div>
-      </motion.div>
-      <Footer />
+      <div className="relative w-full overflow-x-hidden">
+        <motion.div
+          style={{ height }}
+          className="circleContainer absolute top-0 z-[500] !bg-transparent"
+        >
+          <div className="circle"></div>
+        </motion.div>
+
+        <Footer />
+      </div>
     </main>
   );
 }
