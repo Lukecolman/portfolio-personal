@@ -5,8 +5,8 @@
 // -REDESIGN BASED IN DANDADAN INTRO
 // - [x] REMOVE OR MODIFY SCROLLBAR
 // - [x] ADD SOCIAL MEDIA AND MAIL TO CONSTANTS
-// - [] !!! FIX SCROLLBAR ON MOBILE
-// - [] !!! FIX FOOTER ANIMATION ON MOBILE
+// - [x] !!! FIX SCROLLBAR ON MOBILE
+// - [x] !!! FIX FOOTER ANIMATION ON MOBILE
 
 // - [] CODE AND ADD PRELOADER
 // - [] ADD NEW PAGES
@@ -73,7 +73,7 @@ export default function Home() {
     offset: ["start end", "end start"],
   });
 
-  const height = useTransform(scrollYProgress, [0, 0.88], ["1800px", "0px"]);
+  const height = useTransform(scrollYProgress, [0, 0.89], ["2300px", "0px"]);
 
   // Ejecuta las animaciones de GSAP
   useGSAP(() => {

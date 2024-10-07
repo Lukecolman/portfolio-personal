@@ -27,7 +27,7 @@ export default function Footer({}) {
             lg:max-w-[2244px] lg:mx-auto 
             "
       >
-        <div className="z-50 max-w-64 alt-text hidden md:block">
+        <div className="z-50 max-w-64 hidden md:block alt-text-position alt-text-opacity ">
           <span className="z-50   md:text-5xl text-left font-medium ">
             Let&apos;s work together
           </span>
