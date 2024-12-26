@@ -34,7 +34,7 @@ export const Projects = [
 export const JobItem = [
   {
     role: "Frontend Developer",
-    company: "Brandgestic - Spain",
+    company: "Brandgestic - Cyprus",
     period: "2024 - Present",
     type: "Remote",
   },
