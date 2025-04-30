@@ -253,7 +253,7 @@ export default function Home() {
                     <div className='flex flex-col md:flex-row justify-center text-center font-extrabold text-2xl md:text-3xl md:mt-3 ' >
 
                     <a
-                        href='https://drive.google.com/file/d/1Sb7xRoapnLnElM2KtkqxX2LGzXgRUkJM/view?usp=sharing'
+                        href='https://drive.google.com/file/d/1j31oH-DUthldIiZjhqgOT9vbGfSnGm5U/view?usp=sharing'
                         target='_blank'
                         className='under-line-css under-line-red w-fit self-center mx-3
                         '>
@@ -263,7 +263,7 @@ export default function Home() {
                         /
                     </span>
                     <a
-                        href='https://drive.google.com/file/d/1yEk89ipJOD4BcKaBXfVtWHaUGYS4Xg3D/view?usp=sharing'
+                        href='https://drive.google.com/file/d/1VvUw4PuodS0TR96Nfed5amsLlId6Y-Fm/view?usp=sharing'
                         target='_blank'
                         className=' under-line-css under-line-red w-fit self-center mx-3
                         '>
