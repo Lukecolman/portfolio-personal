@@ -74,12 +74,12 @@ export const JobItem = [
 export const Curriculums = [
   {
     title: "DOWNLOAD CV",
-    url: "https://drive.google.com/file/d/1Sb7xRoapnLnElM2KtkqxX2LGzXgRUkJM/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1D4x40IcoKRyBerqSBGcIf0iqD3TRhoX_/view?usp=sharing",
   },
   {
     title: "DESCARGAR CV ",
     span: "(ESP)",
-    url: "https://drive.google.com/file/d/1yEk89ipJOD4BcKaBXfVtWHaUGYS4Xg3D/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1FGvTFXri3f5koMq9zqk0mngEdX2TNFpu/view?usp=sharing",
   },
 ];
 
